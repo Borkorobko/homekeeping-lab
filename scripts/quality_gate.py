@@ -8,6 +8,7 @@ from common import article_path, article_text, load_plan, load_source_packet, qa
 
 MIN_WORDS = 650
 MAX_WORDS = 2200
+MAX_SUMMARY_CHARS = 150
 BANNED_PHRASES = (
     "as an ai",
     "as a language model",
@@ -30,9 +31,14 @@ def evaluate(row: dict[str, str], article: dict) -> tuple[bool, list[str], dict]
     text = article_text(article)
     words = re.findall(r"\b[\w'-]+\b", text)
     count = len(words)
+    summary = " ".join(str(article.get("summary", "")).split())
 
     if article.get("title", "").strip() != row["Title"].strip():
         reasons.append("title does not match content plan")
+    if not summary:
+        reasons.append("summary is missing")
+    elif len(summary) > MAX_SUMMARY_CHARS:
+        reasons.append(f"summary too long: {len(summary)} characters (maximum {MAX_SUMMARY_CHARS})")
     if count < MIN_WORDS:
         reasons.append(f"too short: {count} words (minimum {MIN_WORDS})")
     if count > MAX_WORDS:
@@ -85,6 +91,7 @@ def evaluate(row: dict[str, str], article: dict) -> tuple[bool, list[str], dict]
         "slug": row["Slug"],
         "checked_at": datetime.now(timezone.utc).isoformat(),
         "word_count": count,
+        "summary_characters": len(summary),
         "passed": not reasons,
         "reasons": reasons,
     }
