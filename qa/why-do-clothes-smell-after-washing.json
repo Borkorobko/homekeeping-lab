@@ -1,0 +1,16 @@
+{
+  "article_id": 2,
+  "slug": "why-do-clothes-smell-after-washing",
+  "checked_at": "2026-08-23T13:26:31.702190+00:00",
+  "word_count": 734,
+  "summary_characters": 94,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-08-23T13:26:31.753661+00:00",
+    "risk_level": 0,
+    "source_required": false,
+    "passed": true,
+    "reasons": []
+  }
+}

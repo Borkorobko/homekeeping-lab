@@ -1,0 +1,107 @@
+{
+  "title": "Why Do Clothes Smell After Washing?",
+  "summary": "Clothes may smell after washing due to bacteria, detergent residue, or washing machine issues.",
+  "quick_answer": "Clothes often smell after washing because of bacterial growth, leftover detergent or fabric softener residue, or mold and mildew buildup in the washing machine. Insufficient water temperature or load overfilling can also prevent thorough cleaning. Resolving this involves cleaning the washing machine regularly, using the right amount and type of detergent per label instructions, avoiding overloading the machine, and drying clothes promptly after washing. Using appropriate wash cycles and water temperature recommended on garment labels also helps prevent odors.",
+  "items_needed": [
+    "Laundry detergent (follow label directions)",
+    "Washing machine cleaner or white vinegar (if safe for your machine)",
+    "Washing machine manual",
+    "Drying space or dryer",
+    "Soft brush or cloth"
+  ],
+  "steps": [
+    {
+      "title": "Check Detergent and Use Correct Amount",
+      "body": "Review the detergent label and your washing machine manual to confirm the right type and amount of detergent for your load and water hardness. Too much detergent leaves residue; too little may not clean well."
+    },
+    {
+      "title": "Avoid Overloading the Washing Machine",
+      "body": "Do not fill the washing machine beyond recommended capacity. Overloading reduces water circulation and cleaning effectiveness, leading to bacteria and residue build-up."
+    },
+    {
+      "title": "Run a Cleaning Cycle on the Machine",
+      "body": "Use a washing machine cleaner according to the product label or a safe alternative like white vinegar if recommended by your machine’s manual. Clean detergent drawers, seals, and drum to prevent mildew and residue."
+    },
+    {
+      "title": "Dry Clothes Promptly and Thoroughly",
+      "body": "Remove clothes promptly after washing and dry them completely using the dryer or good airflow. Leaving damp clothes in the washer encourages odor-causing bacteria and mildew."
+    }
+  ],
+  "mistakes": [
+    "Using too much detergent, which causes residue build-up and smells",
+    "Overloading the washing machine, reducing cleaning effectiveness",
+    "Leaving wet clothes in the drum for extended periods, allowing odors to develop",
+    "Mixing incompatible cleaning agents (e.g., bleach with vinegar), which can be unsafe and damage fabrics"
+  ],
+  "safety_notes": [
+    "Always follow detergent and appliance label instructions for safe use and dosing.",
+    "Do not mix bleach with vinegar, ammonia, or other cleaners unless explicitly permitted by the product labels.",
+    "Test any cleaning agent on an inconspicuous fabric area first if compatibility is uncertain."
+  ],
+  "sections": [
+    {
+      "heading": "Why Do Clothes Retain Odors After Washing?",
+      "body": "Clothes may retain odors when bacteria or mildew remain even after washing. These microorganisms thrive in damp, warm environments like the washing machine drum or detergent compartments. Additionally, using excessive detergent can leave residues that trap odors or prevent proper rinsing. In some cases, washing with cold water or short cycles may not fully eliminate odor-causing agents from fabrics.",
+      "bullets": [
+        "Bacteria and mildew grow in damp washing machine parts",
+        "Detergent residue traps odors in fabric",
+        "Overloading blocks thorough cleaning",
+        "Inadequate drying allows bacteria to thrive after wash"
+      ]
+    },
+    {
+      "heading": "How Washing Machine Maintenance Prevents Odors",
+      "body": "Routine cleaning of your washing machine helps prevent mold, mildew, and detergent build-up that cause odors to transfer to clothing. Cleaning detergent drawers, seals, and drum interiors according to your washing machine manual or product instructions reduces microbial growth and residue.",
+      "bullets": [
+        "Run washing machine cleaner cycles monthly or as recommended",
+        "Wipe rubber seals and detergent compartments with a cloth",
+        "Leave the door or lid open after use to air dry interior"
+      ]
+    },
+    {
+      "heading": "Proper Washing and Drying Practices",
+      "body": "Using detergent amounts appropriate for your load and water hardness ensures effective dirt and odor removal without residue. Avoid overloading to maintain good water circulation. Remove clothes promptly and dry thoroughly using a dryer or good airflow to prevent bacteria growth and musty smells.",
+      "bullets": [
+        "Follow detergent label dosing instructions",
+        "Avoid washing large, heavy items with smaller loads",
+        "Dry clothes as soon as the wash cycle ends"
+      ]
+    },
+    {
+      "heading": "Material-Specific Considerations",
+      "body": "Some fabrics like elastane blends or permanent press clothing can trap odors more readily. Follow care labels carefully, using recommended water temperatures and wash cycles to minimize odor retention. For delicate or specialty fabrics, hand washing or specialized detergents may be necessary to prevent residue buildup or fabric damage."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can cold water washing cause clothes to smell?",
+      "answer": "Cold water washing might not remove bacteria and detergent residues as effectively as warmer water, sometimes causing odors to linger."
+    },
+    {
+      "question": "Is it safe to use vinegar to clean my washing machine?",
+      "answer": "Only use vinegar if your washing machine manufacturer confirms it is safe; otherwise, follow recommended cleaning products and instructions."
+    },
+    {
+      "question": "Why do some detergents make clothes smell worse?",
+      "answer": "Using too much detergent or low-quality detergent can leave residues that trap odors or fail to eliminate bacteria, causing odors."
+    }
+  ],
+  "meta": {
+    "id": 2,
+    "slug": "why-do-clothes-smell-after-washing",
+    "category": "Laundry",
+    "cluster": "Laundry Odors",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/laundry/",
+    "related_ids": [
+      1,
+      3,
+      5,
+      15
+    ],
+    "generated_at": "2026-08-23T13:26:31.564446+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}

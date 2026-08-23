@@ -1,6 +1,6 @@
 ID,Title,Category,Cluster,Intent,Priority,RiskLevel,SourceRequired,ParentHub,RelatedIDs,Status,PublishedDate,Slug
 1,How Much Laundry Detergent Should You Use?,Laundry,Laundry Basics,Informational,1,0,no,/laundry/,2|4|5,Published,2026-08-23,how-much-laundry-detergent-should-you-use
-2,Why Do Clothes Smell After Washing?,Laundry,Laundry Odors,Problem Solving,1,0,no,/laundry/,1|3|5|15,Pending,,why-do-clothes-smell-after-washing
+2,Why Do Clothes Smell After Washing?,Laundry,Laundry Odors,Problem Solving,1,0,no,/laundry/,1|3|5|15,Published,2026-08-23,why-do-clothes-smell-after-washing
 3,How to Clean a Washing Machine That Smells,Laundry,Washing Machine Care,Problem Solving,1,1,yes,/laundry/,1|2|5|23,Pending,,how-to-clean-a-washing-machine-that-smells
 4,What Temperature Should You Wash Clothes At?,Laundry,Laundry Basics,Informational,1,0,yes,/laundry/,1|5|11|13,Pending,,what-temperature-should-you-wash-clothes-at
 5,How to Remove Detergent Residue From Clothes,Laundry,Laundry Problems,Problem Solving,2,0,no,/laundry/,1|2|3|4,Pending,,how-to-remove-detergent-residue-from-clothes
