@@ -105,7 +105,7 @@ Return ONLY one valid JSON object. Do not use Markdown fences.
 Required shape:
 {{
   "title": "exact requested title",
-  "summary": "1-2 sentence summary",
+  "summary": "one concise sentence, maximum 150 characters including spaces",
   "quick_answer": "direct answer in 80-160 words",
   "items_needed": ["item or condition"],
   "steps": [
