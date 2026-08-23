@@ -4,48 +4,55 @@
 
 Build a mostly automated English-language evergreen site for home cleaning, laundry, stain removal, fabric care, odors, shoes, bedding, kitchen, bathroom, and general home maintenance.
 
-## Core pipeline
+## Implemented pipeline
 
-1. `content_plan.csv` is the source of truth for planned articles.
-2. The generator selects only eligible `Pending` topics, ordered by priority.
-3. A duplicate/cannibalization gate checks title, intent, cluster, and existing published content.
-4. A safety classifier reads `RiskLevel` and the draft itself.
-5. Source retrieval is mandatory when `SourceRequired=yes` or when the draft is escalated by the safety classifier.
-6. The article is generated into a structured HTML template.
-7. Quality gates check usefulness, structure, metadata, links, unsupported claims, and obvious repetition.
-8. The safety gate blocks unsafe chemical advice.
-9. Explicit `RelatedIDs` are used for primary internal links; semantic similarity is only a fallback.
-10. Category pages, homepage, sitemap, robots.txt, and article indexes are rebuilt.
-11. GitHub Actions commits/publishes only when all required gates pass.
-12. Google Search Console feedback will be added later once useful performance data exists.
+1. `content_plan.csv` is the source of truth.
+2. `scripts/validate_plan.py` validates IDs, slugs, categories, hubs, risk levels and explicit related links.
+3. `scripts/generate.py` selects one eligible `Pending` topic by priority.
+4. Topics with `SourceRequired=yes` are skipped until a verified `sources/<ID>.json` packet exists.
+5. The generator writes structured JSON, not free-form page HTML.
+6. `scripts/quality_gate.py` checks length, structure, practical depth, repetition and prohibited low-quality language.
+7. `scripts/safety_gate.py` blocks unsafe chemical instructions, missing required sources and escalation topics.
+8. `scripts/build_site.py` publishes only articles that reached `SafetyPassed`, then builds the static site.
+9. Explicit `RelatedIDs` are the primary internal-link system.
+10. The builder generates homepage, category hubs, guide pages, About, Editorial Policy, Safety Policy, sitemap and robots.txt.
+11. `.github/workflows/generate.yml` runs one complete article cycle manually.
+12. `.github/workflows/checks.yml` compiles scripts, validates the content plan and tests the static build on pushes/PRs.
 
-## Planned repository layout
+## Publishing states
+
+`Pending → Draft → QualityPassed → SafetyPassed → Published`
+
+Failed checks become `QualityBlocked` or `SafetyBlocked`; blocked content is not rendered into the public site.
+
+## Repository layout
 
 ```text
 homekeeping-lab/
 ├── .github/
 │   └── workflows/
+│       ├── checks.yml
+│       └── generate.yml
 ├── config/
 │   └── site.json
+├── content/
+│   └── articles/          # generated structured article JSON
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   └── SAFETY.md
-├── guides/                 # generated article output
-├── images/                 # generated/approved article imagery
+├── qa/                    # machine-readable quality/safety reports
 ├── scripts/
+│   ├── common.py
 │   ├── generate.py
 │   ├── quality_gate.py
 │   ├── safety_gate.py
 │   ├── build_site.py
 │   └── validate_plan.py
-├── templates/
+├── site/                  # generated deployable static site
+├── sources/               # verified source packets for safety-sensitive topics
 ├── content_plan.csv
-├── index.html
-├── robots.txt
-└── sitemap.xml
+└── requirements.txt
 ```
-
-Directories that contain generated content will be created when the generator is added.
 
 ## URL model
 
@@ -53,52 +60,29 @@ Articles use stable guide URLs independent of category changes:
 
 `https://homekeepinglab.com/guides/<slug>/`
 
-Category hubs use short top-level URLs, for example:
+Category hubs use top-level URLs such as `/laundry/`, `/stain-removal/`, `/bathroom/`, `/kitchen/`, `/odors/` and `/shoes/`.
 
-- `/laundry/`
-- `/stain-removal/`
-- `/fabric-care/`
-- `/bathroom/`
-- `/kitchen/`
-- `/odors/`
-- `/bedding-towels/`
-- `/shoes/`
-- `/home-cleaning/`
+## Safety model
+
+Safety rules are enforced twice: generation instructions reduce unsafe output, but publication does not trust the prompt alone. The deterministic safety gate separately checks the completed draft.
+
+Risk 0 can proceed without a source packet when the topic is genuinely routine. Risk 1+ requires a valid authoritative source packet. Risk 2 additionally requires `approved_for_auto_publish=true`. Risk 3 is blocked from automatic publication.
 
 ## Internal linking
 
-Football Training Lab primarily inferred related articles from shared title tokens. Homekeeping Lab will instead use explicit relationships from `content_plan.csv` as the primary system.
-
-Each article can specify up to four `RelatedIDs`. The generator should validate that every referenced ID exists and should prefer links within the same problem journey or content cluster. Semantic similarity may fill missing slots but must not override explicit links.
-
-## Content plan fields
-
-- `ID` — stable article identifier.
-- `Title` — intended page title/topic.
-- `Category` — primary user-facing section.
-- `Cluster` — narrower topical cluster.
-- `Intent` — user search intent.
-- `Priority` — lower number means earlier publication.
-- `RiskLevel` — safety classification from 0 to 3.
-- `SourceRequired` — whether authoritative sourcing is mandatory before publication.
-- `ParentHub` — category hub that should link to the guide.
-- `RelatedIDs` — pipe-delimited explicit related article IDs.
-- `Status` — workflow state.
-- `PublishedDate` — populated only after publication.
-- `Slug` — stable URL slug.
+Football Training Lab primarily inferred related articles from shared title tokens. Homekeeping Lab instead uses explicit `RelatedIDs` as the primary relationship graph. Only related guides that are actually published are rendered as links.
 
 ## Launch strategy
 
-The initial plan contains 25 launch articles. We will not publish them blindly in one burst. The build should support staged publication, with the initial high-priority cluster coverage followed by roughly 2–4 new guides per week after launch.
+The initial plan contains 25 launch articles. We will not publish them in one burst. After the first manual end-to-end test succeeds, the workflow can be scheduled for roughly 2–4 new guides per week.
 
-## Later phases
+## Remaining phases
 
-- GitHub Actions automation
-- OpenAI API article generation
-- source verification layer
-- article templates and design system
-- automatic sitemap/category rebuild
-- deployment through Cloudflare Pages
-- custom-domain DNS setup
-- Google Search Console + feedback loop
-- AdSense after the site has sufficient quality and traffic
+- add `OPENAI_API_KEY` as a GitHub Actions repository secret
+- run and inspect the first manual article cycle
+- fix any real-world pipeline issues found by that run
+- enable the publishing schedule
+- connect the deployable `site/` directory to hosting
+- connect `homekeepinglab.com` through DNS
+- add Search Console after indexing/performance data exists
+- add AdSense only after the site has enough useful content and traffic
