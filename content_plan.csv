@@ -1,0 +1,26 @@
+ID,Title,Category,Cluster,Intent,Priority,RiskLevel,SourceRequired,ParentHub,RelatedIDs,Status,PublishedDate,Slug
+1,How Much Laundry Detergent Should You Use?,Laundry,Laundry Basics,Informational,1,0,no,/laundry/,2|4|5,Pending,,how-much-laundry-detergent-should-you-use
+2,Why Do Clothes Smell After Washing?,Laundry,Laundry Odors,Problem Solving,1,0,no,/laundry/,1|3|5|15,Pending,,why-do-clothes-smell-after-washing
+3,How to Clean a Washing Machine That Smells,Laundry,Washing Machine Care,Problem Solving,1,1,yes,/laundry/,1|2|5|23,Pending,,how-to-clean-a-washing-machine-that-smells
+4,What Temperature Should You Wash Clothes At?,Laundry,Laundry Basics,Informational,1,0,yes,/laundry/,1|5|11|13,Pending,,what-temperature-should-you-wash-clothes-at
+5,How to Remove Detergent Residue From Clothes,Laundry,Laundry Problems,Problem Solving,2,0,no,/laundry/,1|2|3|4,Pending,,how-to-remove-detergent-residue-from-clothes
+6,How to Get Oil Stains Out of Clothes,Stain Removal,Food & Grease Stains,Problem Solving,1,0,no,/stain-removal/,7|9|10|11,Pending,,how-to-get-oil-stains-out-of-clothes
+7,How to Remove Coffee Stains From Clothes,Stain Removal,Food & Drink Stains,Problem Solving,1,0,no,/stain-removal/,6|8|9|11,Pending,,how-to-remove-coffee-stains-from-clothes
+8,How to Remove Blood Stains From Fabric,Stain Removal,Biological Stains,Problem Solving,1,1,yes,/stain-removal/,7|9|11|12,Pending,,how-to-remove-blood-stains-from-fabric
+9,How to Remove Deodorant Stains From Shirts,Stain Removal,Body Care Stains,Problem Solving,1,0,no,/stain-removal/,6|7|10|11,Pending,,how-to-remove-deodorant-stains-from-shirts
+10,How to Get Makeup Out of Clothes,Stain Removal,Body Care Stains,Problem Solving,2,0,no,/stain-removal/,6|9|11|12,Pending,,how-to-get-makeup-out-of-clothes
+11,How to Wash Cotton Without Shrinking It,Fabric Care,Cotton,Informational,1,0,yes,/fabric-care/,4|6|8|12,Pending,,how-to-wash-cotton-without-shrinking-it
+12,What Laundry Symbols Mean,Fabric Care,Care Labels,Informational,1,0,yes,/fabric-care/,4|8|10|11,Pending,,what-laundry-symbols-mean
+13,How to Wash Towels and Keep Them Soft,Bedding & Towels,Towels,Problem Solving,1,0,no,/bedding-towels/,4|14|15,Pending,,how-to-wash-towels-and-keep-them-soft
+14,How to Restore Absorbency to Towels,Bedding & Towels,Towels,Problem Solving,1,0,no,/bedding-towels/,13|15|1,Pending,,how-to-restore-absorbency-to-towels
+15,How to Remove Sour Smell From Towels,Odors,Laundry Odors,Problem Solving,1,0,no,/odors/,2|3|13|14,Pending,,how-to-remove-sour-smell-from-towels
+16,How to Clean Shower Glass Without Streaks,Bathroom,Shower Cleaning,Problem Solving,1,1,yes,/bathroom/,17|18|19,Pending,,how-to-clean-shower-glass-without-streaks
+17,How to Remove Limescale From Faucets,Bathroom,Limescale,Problem Solving,1,1,yes,/bathroom/,16|18|19|20,Pending,,how-to-remove-limescale-from-faucets
+18,How to Clean Bathroom Grout,Bathroom,Grout & Tile,Problem Solving,2,1,yes,/bathroom/,16|17|19,Pending,,how-to-clean-bathroom-grout
+19,How to Clean a Showerhead,Bathroom,Shower Cleaning,Problem Solving,2,1,yes,/bathroom/,16|17|18,Pending,,how-to-clean-a-showerhead
+20,How to Clean Stainless Steel Without Streaks,Kitchen,Kitchen Surfaces,Problem Solving,1,0,no,/kitchen/,17|21|23,Pending,,how-to-clean-stainless-steel-without-streaks
+21,How to Deep Clean a Refrigerator,Kitchen,Refrigerator Care,Problem Solving,1,0,yes,/kitchen/,20|22|23,Pending,,how-to-deep-clean-a-refrigerator
+22,How to Get Rid of Refrigerator Odors,Odors,Kitchen Odors,Problem Solving,2,0,no,/odors/,21|23|15|25,Pending,,how-to-get-rid-of-refrigerator-odors
+23,Why Your Dishwasher Smells and How to Clean It,Kitchen,Dishwasher Care,Problem Solving,1,1,yes,/kitchen/,3|20|21|22,Pending,,why-your-dishwasher-smells-and-how-to-clean-it
+24,How to Clean White Sneakers,Shoes,Sneaker Care,Problem Solving,1,0,no,/shoes/,25|10|12,Pending,,how-to-clean-white-sneakers
+25,How to Get Rid of Shoe Odor,Odors,Shoe Odors,Problem Solving,2,0,no,/odors/,24|15|22,Pending,,how-to-get-rid-of-shoe-odor
