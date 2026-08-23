@@ -4,7 +4,7 @@ import json
 import re
 from datetime import datetime, timezone
 
-from common import article_path, article_text, load_plan, qa_path, save_plan
+from common import article_path, article_text, load_plan, load_source_packet, qa_path, save_plan
 
 MIN_WORDS = 650
 MAX_WORDS = 2200
@@ -15,6 +15,13 @@ BANNED_PHRASES = (
     "i tested this",
     "guaranteed to",
     "100% safe",
+)
+
+UNSOURCED_DOSING_PATTERNS = (
+    r"\b\d+(?:\.\d+)?\s*(?:to|[-–])\s*\d+(?:\.\d+)?\s*(?:tablespoons?|tbsp|teaspoons?|tsp|cups?|millilit(?:er|re)s?|ml|ounces?|oz)\b",
+    r"\b\d+(?:\.\d+)?\s*(?:tablespoons?|tbsp|teaspoons?|tsp|cups?|millilit(?:er|re)s?|ml|ounces?|oz)\b",
+    r"\b\d+(?:\.\d+)?\s*%\b",
+    r"\b\d+\s*:\s*\d+\b",
 )
 
 
@@ -49,6 +56,13 @@ def evaluate(row: dict[str, str], article: dict) -> tuple[bool, list[str], dict]
         reasons.append("markdown code fence found in structured content")
     if re.search(r"https?://", text):
         reasons.append("raw URL found in article body; sources belong in metadata")
+
+    # Exact detergent/cleaner dosing needs a verified source packet because formulas vary.
+    if load_source_packet(row) is None:
+        for pattern in UNSOURCED_DOSING_PATTERNS:
+            if re.search(pattern, lower, flags=re.I):
+                reasons.append("unsourced exact cleaner/detergent dose, concentration, or ratio detected")
+                break
 
     # Catch near-empty or repetitive step bodies.
     bodies = []
