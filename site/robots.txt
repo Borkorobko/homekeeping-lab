@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://homekeepinglab.com/sitemap.xml
