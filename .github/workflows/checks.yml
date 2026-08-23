@@ -1,0 +1,31 @@
+name: Homekeeping Lab Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python scripts
+        run: python -m py_compile scripts/*.py
+
+      - name: Validate content plan
+        run: python scripts/validate_plan.py
+
+      - name: Test static build
+        run: python scripts/build_site.py
