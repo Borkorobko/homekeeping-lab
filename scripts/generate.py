@@ -51,7 +51,12 @@ def choose_topic(rows: list[dict[str, str]]) -> dict[str, str] | None:
 def source_context(row: dict[str, str]) -> str:
     packet = load_source_packet(row)
     if not packet:
-        return "No external source packet is required for this low-risk topic. Do not invent studies, statistics, or product-specific claims."
+        return (
+            "No external source packet is available for this low-risk topic. "
+            "Do not invent studies, statistics, product-specific claims, universal product doses, "
+            "chemical ratios, concentrations, or dwell times. When a product amount depends on its "
+            "formula or concentration, tell the reader to follow the product label and appliance/manual guidance."
+        )
     safe = {
         "notes": packet.get("notes", ""),
         "sources": packet.get("sources", []),
@@ -67,6 +72,7 @@ if row is None:
 
 risk = int(row["RiskLevel"])
 sources = source_context(row)
+has_source_packet = load_source_packet(row) is not None
 
 prompt = f'''
 You are writing one practical English guide for Homekeeping Lab, an evergreen home cleaning, laundry and home-care website.
@@ -76,17 +82,21 @@ Category: {row['Category']}
 Cluster: {row['Cluster']}
 Search intent: {row['Intent']}
 Risk level: {risk}
+Verified source packet available: {str(has_source_packet).lower()}
 
-SAFETY RULES OVERRIDE SEO AND STYLE:
+SAFETY AND ACCURACY RULES OVERRIDE SEO AND STYLE:
 - Never recommend mixing bleach with ammonia, vinegar, acids, or another cleaner unless a manufacturer explicitly permits the exact combination.
 - Never recommend mixing unknown cleaning products.
 - Never invent chemical ratios, concentrations, exposure limits, dwell times, material compatibility, or product-label directions.
+- Never give a universal numeric detergent/cleaner dose, volume, ratio, percentage, or concentration unless the supplied verified source packet directly supports that exact guidance.
+- Detergent and cleaner formulas vary by product and concentration. Without a verified source packet, use label-first wording instead of tablespoons, teaspoons, cups, milliliters, ounces, percentages, or mixing ratios.
 - Do not tell readers that stronger chemical concentration is better.
 - If a commercial cleaner is relevant, tell the reader to follow the product label.
+- When appliance-specific dosing or placement matters, tell the reader to check the appliance manual as well as the product label.
 - When material compatibility is uncertain, recommend manufacturer guidance or an inconspicuous patch test.
 - Do not claim personal testing or first-hand experience.
-- Do not invent studies, statistics, certifications, or endorsements.
-- If a source packet is provided, use only claims supported by it for safety-sensitive details.
+- Do not invent studies, statistics, certifications, endorsements, health outcomes, or equipment-damage claims.
+- If a source packet is provided, use only claims supported by it for safety-sensitive or numeric details.
 
 SOURCE PACKET:
 {sources}
@@ -120,6 +130,7 @@ Quality requirements:
 - Include at least 4 steps when the topic is procedural.
 - Include material-specific caveats when relevant.
 - Mention what not to do when it prevents damage or unsafe use.
+- Prefer conditional, label-first advice over false precision when products or materials vary.
 - Keep the tone calm and practical, not promotional.
 '''
 
