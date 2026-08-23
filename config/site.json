@@ -1,0 +1,34 @@
+{
+  "site_name": "Homekeeping Lab",
+  "domain": "https://homekeepinglab.com",
+  "language": "en",
+  "content_root": "/guides/",
+  "launch_target_articles": 25,
+  "planned_weekly_publish_min": 2,
+  "planned_weekly_publish_max": 4,
+  "categories": [
+    {"name": "Laundry", "slug": "laundry"},
+    {"name": "Stain Removal", "slug": "stain-removal"},
+    {"name": "Fabric Care", "slug": "fabric-care"},
+    {"name": "Bathroom", "slug": "bathroom"},
+    {"name": "Kitchen", "slug": "kitchen"},
+    {"name": "Odors", "slug": "odors"},
+    {"name": "Bedding & Towels", "slug": "bedding-towels"},
+    {"name": "Shoes", "slug": "shoes"},
+    {"name": "Home Cleaning", "slug": "home-cleaning"}
+  ],
+  "publishing": {
+    "default_status": "Pending",
+    "require_quality_gate": true,
+    "require_safety_gate": true,
+    "block_on_duplicate_intent": true,
+    "block_risk_level_3": true
+  },
+  "seo": {
+    "use_canonical_urls": true,
+    "generate_sitemap": true,
+    "generate_robots_txt": true,
+    "explicit_related_links": true,
+    "max_related_articles": 4
+  }
+}
