@@ -1,0 +1,23 @@
+{
+  "article_id": 4,
+  "topic": "What Temperature Should You Wash Clothes At?",
+  "verified_at": "2026-08-24",
+  "notes": "Treat the garment care label as the primary limit. Do not present one temperature as universally correct. Explain that the number in a GINETEX wash symbol is the maximum permitted washing temperature and that milder/lower-temperature treatment is generally permitted. In U.S.-style wording, care labels may specify cold, warm, or hot. Any hygiene-sensitive exception should be narrowly framed and source-backed.",
+  "sources": [
+    {
+      "title": "Care Labelling",
+      "url": "https://www.ginetex.net/en/care-labelling/",
+      "authority": "GINETEX – International Association for Textile Care Labelling"
+    },
+    {
+      "title": "Care Labeling of Textile Wearing Apparel & Certain Piece Goods",
+      "url": "https://www.ftc.gov/legal-library/browse/rules/care-labeling-textile-wearing-apparel-certain-piece-goods-text",
+      "authority": "U.S. Federal Trade Commission"
+    },
+    {
+      "title": "Laundry Basics",
+      "url": "https://www.cleaninginstitute.org/cleaning-tips/clothes/laundry-basics",
+      "authority": "American Cleaning Institute"
+    }
+  ]
+}
