@@ -1,0 +1,23 @@
+{
+  "article_id": 3,
+  "topic": "How to Clean a Washing Machine That Smells",
+  "verified_at": "2026-08-24",
+  "notes": "Keep the guide model-agnostic. Prefer the washer manufacturer's cleaning cycle and approved washer-cleaner instructions. Do not recommend vinegar as a universal washer cleaner; Whirlpool specifically warns that vinegar can damage washer components over time. Do not invent bleach doses or combine cleaners. If bleach or any disinfectant is discussed, tell readers to follow the appliance manual and product label and never mix cleaning products.",
+  "sources": [
+    {
+      "title": "Why Does My Washing Machine Smell Like Mildew?",
+      "url": "https://www.whirlpool.com/blog/washers-and-dryers/washer-smells-like-mildew.html",
+      "authority": "Whirlpool"
+    },
+    {
+      "title": "Removing Odors from the Interior of a Washer",
+      "url": "https://producthelp.whirlpool.com/Laundry/Washers/Product_Info/Washer_Cleaning_and_Care/Removing_Odors_from_the_Interior_of_a_Washer",
+      "authority": "Whirlpool Product Help"
+    },
+    {
+      "title": "Cleaning and Disinfecting with Bleach",
+      "url": "https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html",
+      "authority": "U.S. Centers for Disease Control and Prevention"
+    }
+  ]
+}
