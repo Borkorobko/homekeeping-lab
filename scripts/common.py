@@ -20,6 +20,12 @@ SITE_DIR.mkdir(parents=True, exist_ok=True)
 
 GA_MEASUREMENT_ID = "G-6L050GSVSB"
 CONSENT_KEY = "homekeepinglab_analytics_consent_v1"
+FAVICON_LINK = '<link rel="icon" type="image/svg+xml" href="/favicon.svg">'
+FAVICON_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#2e6b58"/>
+  <text x="32" y="40" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#ffffff">HL</text>
+</svg>'''
+
 GA_SNIPPET = f'''<!-- Google tag (gtag.js) -->
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -78,8 +84,8 @@ CONSENT_BANNER = f'''<style>
 </script>'''
 
 # Build output is generated from several call sites in build_site.py. Inject the
-# analytics tag and consent controls centrally into every generated HTML file so
-# future articles and hub pages inherit them automatically. Non-HTML writes are untouched.
+# analytics tag, favicon and consent controls centrally into every generated HTML
+# file so future articles and hub pages inherit them automatically.
 _ORIGINAL_WRITE_TEXT = Path.write_text
 
 
@@ -92,10 +98,21 @@ def _write_text_with_analytics(self: Path, data: str, *args: Any, **kwargs: Any)
     if is_site_html:
         if GA_MEASUREMENT_ID not in data and "<head>" in data:
             data = data.replace("<head>", "<head>\n" + GA_SNIPPET, 1)
+        if "/favicon.svg" not in data and "<head>" in data:
+            data = data.replace("<head>", "<head>\n" + FAVICON_LINK, 1)
         if "id=\"hl-consent\"" not in data and "</body>" in data:
             data = data.replace("</body>", CONSENT_BANNER + "\n</body>", 1)
 
-    return _ORIGINAL_WRITE_TEXT(self, data, *args, **kwargs)
+    result = _ORIGINAL_WRITE_TEXT(self, data, *args, **kwargs)
+
+    # build_site.py recreates SITE_DIR on each build, so create the favicon again
+    # during the first HTML write instead of relying on a hand-maintained output file.
+    if is_site_html:
+        favicon_path = SITE_DIR / "favicon.svg"
+        if not favicon_path.exists() or favicon_path.read_text(encoding="utf-8") != FAVICON_SVG:
+            _ORIGINAL_WRITE_TEXT(favicon_path, FAVICON_SVG, encoding="utf-8")
+
+    return result
 
 
 Path.write_text = _write_text_with_analytics
