@@ -1,0 +1,18 @@
+{
+  "article_id": 21,
+  "topic": "How to Deep Clean a Refrigerator",
+  "verified_at": "2026-08-24",
+  "notes": "Prioritize food safety and appliance-manufacturer compatibility. Wipe spills promptly, use hot soapy water for food-contact interior surfaces where appropriate, rinse, and avoid solvent cleaners, abrasives, or products that may impart chemical odors/tastes. Do not advise mixing cleaners. Keep instructions general enough to defer to the refrigerator manual for removable parts, finishes and electrical safety.",
+  "sources": [
+    {
+      "title": "Refrigeration & Food Safety",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/refrigeration",
+      "authority": "USDA Food Safety and Inspection Service"
+    },
+    {
+      "title": "Cleaning and Disinfecting",
+      "url": "https://www.cdc.gov/hygiene/cleaning-disinfecting/index.html",
+      "authority": "U.S. Centers for Disease Control and Prevention"
+    }
+  ]
+}
