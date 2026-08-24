@@ -19,12 +19,15 @@ SOURCES_DIR.mkdir(parents=True, exist_ok=True)
 SITE_DIR.mkdir(parents=True, exist_ok=True)
 
 GA_MEASUREMENT_ID = "G-6L050GSVSB"
+CONSENT_KEY = "homekeepinglab_analytics_consent_v1"
 GA_SNIPPET = f'''<!-- Google tag (gtag.js) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
+  var savedAnalyticsConsent = null;
+  try {{ savedAnalyticsConsent = localStorage.getItem('{CONSENT_KEY}'); }} catch (e) {{}}
   gtag('consent', 'default', {{
-    'analytics_storage': 'denied',
+    'analytics_storage': savedAnalyticsConsent === 'granted' ? 'granted' : 'denied',
     'ad_storage': 'denied',
     'ad_user_data': 'denied',
     'ad_personalization': 'denied',
@@ -37,9 +40,46 @@ GA_SNIPPET = f'''<!-- Google tag (gtag.js) -->
   gtag('config', '{GA_MEASUREMENT_ID}');
 </script>'''
 
+CONSENT_BANNER = f'''<style>
+#hl-consent{{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:760px;margin:0 auto;background:#fff;border:1px solid #dfe6e2;border-radius:16px;box-shadow:0 12px 36px rgba(20,48,43,.18);padding:18px 20px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#18302b;display:none}}
+#hl-consent p{{margin:0 0 14px;line-height:1.5;font-size:.95rem}}
+#hl-consent-actions{{display:flex;gap:10px;flex-wrap:wrap}}
+#hl-consent button{{border:1px solid #2e6b58;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer;font:inherit}}
+#hl-consent-accept{{background:#2e6b58;color:#fff}}
+#hl-consent-reject{{background:#fff;color:#2e6b58}}
+</style>
+<div id="hl-consent" role="dialog" aria-live="polite" aria-label="Analytics cookie preferences">
+  <p><strong>Analytics cookies</strong><br>We use optional Google Analytics cookies to understand how visitors use Homekeeping Lab. You can accept or reject analytics cookies. Essential site functions do not depend on them.</p>
+  <div id="hl-consent-actions">
+    <button id="hl-consent-accept" type="button">Accept analytics</button>
+    <button id="hl-consent-reject" type="button">Reject</button>
+  </div>
+</div>
+<script>
+(function(){{
+  var key = '{CONSENT_KEY}';
+  var banner = document.getElementById('hl-consent');
+  var saved = null;
+  try {{ saved = localStorage.getItem(key); }} catch (e) {{}}
+
+  function setConsent(value) {{
+    try {{ localStorage.setItem(key, value); }} catch (e) {{}}
+    gtag('consent', 'update', {{'analytics_storage': value}});
+    if (value === 'granted') {{
+      gtag('event', 'page_view', {{page_location: window.location.href, page_title: document.title}});
+    }}
+    banner.style.display = 'none';
+  }}
+
+  if (!saved) {{ banner.style.display = 'block'; }}
+  document.getElementById('hl-consent-accept').addEventListener('click', function(){{ setConsent('granted'); }});
+  document.getElementById('hl-consent-reject').addEventListener('click', function(){{ setConsent('denied'); }});
+}})();
+</script>'''
+
 # Build output is generated from several call sites in build_site.py. Inject the
-# analytics tag centrally into every generated HTML file so future articles and
-# hub pages inherit it automatically. Non-HTML writes are untouched.
+# analytics tag and consent controls centrally into every generated HTML file so
+# future articles and hub pages inherit them automatically. Non-HTML writes are untouched.
 _ORIGINAL_WRITE_TEXT = Path.write_text
 
 
@@ -49,8 +89,11 @@ def _write_text_with_analytics(self: Path, data: str, *args: Any, **kwargs: Any)
     except Exception:
         is_site_html = False
 
-    if is_site_html and GA_MEASUREMENT_ID not in data and "<head>" in data:
-        data = data.replace("<head>", "<head>\n" + GA_SNIPPET, 1)
+    if is_site_html:
+        if GA_MEASUREMENT_ID not in data and "<head>" in data:
+            data = data.replace("<head>", "<head>\n" + GA_SNIPPET, 1)
+        if "id=\"hl-consent\"" not in data and "</body>" in data:
+            data = data.replace("</body>", CONSENT_BANNER + "\n</body>", 1)
 
     return _ORIGINAL_WRITE_TEXT(self, data, *args, **kwargs)
 
