@@ -1,0 +1,23 @@
+{
+  "article_id": 23,
+  "topic": "Why Your Dishwasher Smells and How to Clean It",
+  "verified_at": "2026-08-24",
+  "notes": "Keep the guide model-agnostic and tell readers to consult their dishwasher manual before removing filters or using a cleaner. Food debris, clogged/dirty filters and drainage issues can contribute to odors. Clean removable filters with running water and a soft brush when the model permits it, reinstall them securely, and do not operate a dishwasher without required filters. Do not mix cleaners. If vinegar is mentioned, present it only as a manufacturer-dependent option, not a universal rule.",
+  "sources": [
+    {
+      "title": "Removing Odors in your Dishwasher",
+      "url": "https://producthelp.whirlpool.com/Dishwashers/Product_Info/Dishwasher_Cleaning_and_Care/Removing_Odors_in_your_Dishwasher",
+      "authority": "Whirlpool Product Help"
+    },
+    {
+      "title": "How to Clean the Dishwasher Filters",
+      "url": "https://producthelp.whirlpool.com/Dishwashers/Product_Info/Dishwasher_Cleaning_and_Care/How_to_Clean_the_Dishwasher_Filters",
+      "authority": "Whirlpool Product Help"
+    },
+    {
+      "title": "Cleaning and Disinfecting",
+      "url": "https://www.cdc.gov/hygiene/cleaning-disinfecting/index.html",
+      "authority": "U.S. Centers for Disease Control and Prevention"
+    }
+  ]
+}
