@@ -1,0 +1,16 @@
+{
+  "article_id": 3,
+  "slug": "how-to-clean-a-washing-machine-that-smells",
+  "checked_at": "2026-08-24T10:48:28.110092+00:00",
+  "word_count": 695,
+  "summary_characters": 112,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-08-24T10:48:28.161278+00:00",
+    "risk_level": 1,
+    "source_required": true,
+    "passed": true,
+    "reasons": []
+  }
+}

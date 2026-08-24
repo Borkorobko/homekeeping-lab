@@ -1,0 +1,105 @@
+{
+  "title": "How to Clean a Washing Machine That Smells",
+  "summary": "Clean your washing machine regularly using the manufacturer’s cleaner or approved method to remove odors safely.",
+  "quick_answer": "To clean a smelly washing machine, run the manufacturer’s recommended washer cleaning cycle using either an approved commercial washer cleaner or a bleach solution, following both the appliance manual and product label instructions strictly. Avoid using vinegar or mixing any cleaners, as some components can be damaged or unsafe reactions may occur. After the cleaning cycle, wipe down seals and detergent dispensers and leave the door open to air dry, preventing mildew buildup that causes odors.",
+  "items_needed": [
+    "Washer manufacturer’s manual",
+    "Approved washer cleaner or bleach-based disinfectant (if recommended)",
+    "Microfiber cloth or soft towel"
+  ],
+  "steps": [
+    {
+      "title": "Check Washer Manual",
+      "body": "Locate your washing machine’s owner’s manual and review the manufacturer’s instructions for cleaning and odor removal, including any guidance on detergent or disinfectant use."
+    },
+    {
+      "title": "Select Approved Cleaning Method",
+      "body": "Use a commercial washer cleaner approved by your washing machine brand, or if your manual permits, a bleach solution following label directions—never mix bleach with other cleaners."
+    },
+    {
+      "title": "Run Cleaning Cycle",
+      "body": "Initiate the washer’s dedicated cleaning cycle or a hot water wash per your machine’s instructions, adding the approved cleaner or bleach at the recommended point. Do not overload the machine."
+    },
+    {
+      "title": "Wipe Interior Components",
+      "body": "After the cycle finishes, use a microfiber cloth to wipe the door seal, drum interior, and detergent dispenser to remove residue and trapped moisture."
+    },
+    {
+      "title": "Air Dry the Washer",
+      "body": "Keep the washer door or lid open for several hours or overnight to ensure thorough drying and prevent mildew growth that causes odors."
+    }
+  ],
+  "mistakes": [
+    "Avoid using vinegar inside washing machines as Whirlpool warns it can damage parts over time.",
+    "Never mix bleach with ammonia, vinegar, or other cleaners to prevent hazardous chemical reactions.",
+    "Do not ignore manufacturer guidelines, which are specific to each model’s materials and components.",
+    "Avoid running cleaning cycles with detergent or fabric softener in the dispenser as residues can cause smells."
+  ],
+  "safety_notes": [
+    "Always follow the washing machine’s manual and the product label instructions for any cleaner or disinfectant.",
+    "Do not mix bleach with other cleaning products to avoid toxic gases or chemical damage.",
+    "Ensure adequate ventilation when using bleach-based disinfectants during cleaning.",
+    "Wear gloves if recommended by the product label to protect your skin."
+  ],
+  "sections": [
+    {
+      "heading": "Why Washing Machines Develop Odors",
+      "body": "Smells in washing machines usually come from mildew, mold, or bacteria growing in damp areas like door seals, detergent dispensers, and the drum. Residual detergent and fabric softener trapped inside the washer provide nutrients for microbes, causing a musty or sour odor. Regular cleaning and proper drying prevent these conditions.",
+      "bullets": [
+        "Residue buildup feeds bacteria and mold",
+        "Closed doors trap moisture promoting mildew",
+        "Cold cycles may not kill odor-causing microbes"
+      ]
+    },
+    {
+      "heading": "The Role of Manufacturer-Approved Cleaners",
+      "body": "Manufacturers develop cleaners and cleaning cycles designed for the materials and construction of their machines, ensuring effective odor removal without damage. Commercial washer cleaners often contain ingredients that break down buildup and sanitize surfaces safely. Using these products as directed maintains appliance integrity and warranty.",
+      "bullets": [
+        "Check label for compatibility with your washer model",
+        "Follow dosing and cycle instructions closely",
+        "Avoid improvised mixtures or non-approved DIY cleaners"
+      ]
+    },
+    {
+      "heading": "Why Not to Use Vinegar for Washer Cleaning",
+      "body": "Though vinegar is popularly used as a natural cleaner, Whirlpool specifically warns it can cause damage to rubber seals and internal components over time. Its acidity may degrade parts leading to leaks or failure. Therefore, rely on approved products and methods for cleaning your washer’s interior.",
+      "bullets": [
+        "Vinegar acidity risks seal deterioration",
+        "Not recommended for long-term use in washers",
+        "Manufacturer warnings prioritize using safe cleaners"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use bleach to clean my washing machine?",
+      "answer": "Yes, if your washer’s manual or the product label permits, use bleach following instructions carefully and never mix it with other cleaners."
+    },
+    {
+      "question": "How often should I clean my washing machine to prevent smells?",
+      "answer": "Cleaning once a month or as recommended in your washer’s manual helps avoid odor buildup, especially if you use cold cycles frequently."
+    },
+    {
+      "question": "Is it safe to leave the washer door open after use?",
+      "answer": "Yes, leaving the door open after washing allows moisture to evaporate, reducing mildew growth and odors."
+    }
+  ],
+  "meta": {
+    "id": 3,
+    "slug": "how-to-clean-a-washing-machine-that-smells",
+    "category": "Laundry",
+    "cluster": "Washing Machine Care",
+    "intent": "Problem Solving",
+    "risk_level": 1,
+    "source_required": true,
+    "parent_hub": "/laundry/",
+    "related_ids": [
+      1,
+      2,
+      5,
+      23
+    ],
+    "generated_at": "2026-08-24T10:48:27.978875+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
