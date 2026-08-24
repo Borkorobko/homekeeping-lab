@@ -18,6 +18,45 @@ QA_DIR.mkdir(parents=True, exist_ok=True)
 SOURCES_DIR.mkdir(parents=True, exist_ok=True)
 SITE_DIR.mkdir(parents=True, exist_ok=True)
 
+GA_MEASUREMENT_ID = "G-6L050GSVSB"
+GA_SNIPPET = f'''<!-- Google tag (gtag.js) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('consent', 'default', {{
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'wait_for_update': 500
+  }});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', '{GA_MEASUREMENT_ID}');
+</script>'''
+
+# Build output is generated from several call sites in build_site.py. Inject the
+# analytics tag centrally into every generated HTML file so future articles and
+# hub pages inherit it automatically. Non-HTML writes are untouched.
+_ORIGINAL_WRITE_TEXT = Path.write_text
+
+
+def _write_text_with_analytics(self: Path, data: str, *args: Any, **kwargs: Any) -> int:
+    try:
+        is_site_html = self.suffix.lower() == ".html" and (self == SITE_DIR or SITE_DIR in self.parents)
+    except Exception:
+        is_site_html = False
+
+    if is_site_html and GA_MEASUREMENT_ID not in data and "<head>" in data:
+        data = data.replace("<head>", "<head>\n" + GA_SNIPPET, 1)
+
+    return _ORIGINAL_WRITE_TEXT(self, data, *args, **kwargs)
+
+
+Path.write_text = _write_text_with_analytics
+
 
 def load_config() -> dict[str, Any]:
     return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
