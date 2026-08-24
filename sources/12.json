@@ -1,0 +1,23 @@
+{
+  "article_id": 12,
+  "topic": "What Laundry Symbols Mean",
+  "verified_at": "2026-08-24",
+  "notes": "Use the official care-symbol meaning and avoid reproducing trademarked symbol artwork unless licensing permits it. It is safe to explain symbols in words. State that the wash-tub number is the maximum washing temperature, bars indicate milder mechanical action, crossed symbols mean the treatment is not permitted, and the care label is the manufacturer’s instruction for that garment.",
+  "sources": [
+    {
+      "title": "Care Symbols",
+      "url": "https://www.ginetex.net/GB/labelling/care-symbols.asp",
+      "authority": "GINETEX – International Association for Textile Care Labelling"
+    },
+    {
+      "title": "Care Labelling",
+      "url": "https://www.ginetex.net/en/care-labelling/",
+      "authority": "GINETEX – International Association for Textile Care Labelling"
+    },
+    {
+      "title": "Clothes Captioning: Complying with the Care Labeling Rule",
+      "url": "https://www.ftc.gov/business-guidance/resources/clothes-captioning-complying-care-labeling-rule",
+      "authority": "U.S. Federal Trade Commission"
+    }
+  ]
+}
