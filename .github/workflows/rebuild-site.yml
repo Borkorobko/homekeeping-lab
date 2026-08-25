@@ -16,8 +16,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: homekeeping-rebuild
-  cancel-in-progress: true
+  group: homekeeping-site-write
+  cancel-in-progress: false
 
 jobs:
   rebuild:
@@ -56,5 +56,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site content_plan.csv
-          git commit -m "Rebuild Homekeeping Lab site" || echo "No changes to commit"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Rebuild Homekeeping Lab site"
+          git pull --rebase origin main
           git push
