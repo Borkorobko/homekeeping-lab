@@ -87,8 +87,8 @@ CONSENT_BANNER = f'''<style>
 </script>'''
 
 # Build output is generated from several call sites in build_site.py. Inject the
-# analytics tag, favicon and consent controls centrally into every generated HTML
-# file so future articles and hub pages inherit them automatically.
+# analytics tag, favicon, mobile behavior and consent controls centrally into every
+# generated HTML file so future articles and hub pages inherit them automatically.
 _ORIGINAL_WRITE_TEXT = Path.write_text
 
 
