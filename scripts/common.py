@@ -52,37 +52,65 @@ GA_SNIPPET = f'''<!-- Google tag (gtag.js) -->
 CONSENT_BANNER = f'''<style>
 #hl-consent{{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:760px;margin:0 auto;background:#fff;border:1px solid #dfe6e2;border-radius:16px;box-shadow:0 12px 36px rgba(20,48,43,.18);padding:18px 20px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#18302b;display:none}}
 #hl-consent p{{margin:0 0 14px;line-height:1.5;font-size:.95rem}}
+#hl-consent a{{color:#2e6b58;font-weight:700}}
 #hl-consent-actions{{display:flex;gap:10px;flex-wrap:wrap}}
 #hl-consent button{{border:1px solid #2e6b58;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer;font:inherit}}
 #hl-consent-accept{{background:#2e6b58;color:#fff}}
 #hl-consent-reject{{background:#fff;color:#2e6b58}}
 </style>
 <div id="hl-consent" role="dialog" aria-live="polite" aria-label="Analytics cookie preferences">
-  <p><strong>Analytics cookies</strong><br>We use optional Google Analytics cookies to understand how visitors use Homekeeping Lab. You can accept or reject analytics cookies. Essential site functions do not depend on them.</p>
+  <p><strong>Analytics cookies</strong><br>We use optional Google Analytics cookies to understand how visitors use Homekeeping Lab. Analytics is denied by default until you choose to accept it. Read our <a href="/cookie-policy/">Cookie Policy</a> and <a href="/privacy-policy/">Privacy Policy</a>.</p>
   <div id="hl-consent-actions">
     <button id="hl-consent-accept" type="button">Accept analytics</button>
-    <button id="hl-consent-reject" type="button">Reject</button>
+    <button id="hl-consent-reject" type="button">Reject analytics</button>
   </div>
 </div>
 <script>
 (function(){{
   var key = '{CONSENT_KEY}';
   var banner = document.getElementById('hl-consent');
+  var settings = document.getElementById('hl-cookie-settings');
   var saved = null;
   try {{ saved = localStorage.getItem(key); }} catch (e) {{}}
 
+  function clearAnalyticsCookies() {{
+    var names = document.cookie.split(';').map(function(item){{ return item.split('=')[0].trim(); }}).filter(Boolean);
+    var host = location.hostname;
+    var parent = host.split('.').length > 2 ? '.' + host.split('.').slice(-2).join('.') : '.' + host;
+    names.forEach(function(name) {{
+      if (name === '_gid' || name === '_gat' || name.indexOf('_ga') === 0) {{
+        document.cookie = name + '=; Max-Age=0; path=/';
+        document.cookie = name + '=; Max-Age=0; path=/; domain=' + host;
+        document.cookie = name + '=; Max-Age=0; path=/; domain=' + parent;
+      }}
+    }});
+  }}
+
+  function showPreferences() {{
+    banner.style.display = 'block';
+    document.getElementById('hl-consent-accept').focus();
+  }}
+
   function setConsent(value) {{
     try {{ localStorage.setItem(key, value); }} catch (e) {{}}
-    gtag('consent', 'update', {{'analytics_storage': value}});
+    gtag('consent', 'update', {{
+      'analytics_storage': value,
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    }});
     if (value === 'granted') {{
       gtag('event', 'page_view', {{page_location: window.location.href, page_title: document.title}});
+    }} else {{
+      clearAnalyticsCookies();
     }}
     banner.style.display = 'none';
   }}
 
-  if (!saved) {{ banner.style.display = 'block'; }}
+  if (!saved) {{ showPreferences(); }}
   document.getElementById('hl-consent-accept').addEventListener('click', function(){{ setConsent('granted'); }});
   document.getElementById('hl-consent-reject').addEventListener('click', function(){{ setConsent('denied'); }});
+  if (settings) {{ settings.addEventListener('click', showPreferences); }}
 }})();
 </script>'''
 
