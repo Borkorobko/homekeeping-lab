@@ -30,6 +30,9 @@ jobs:
       - name: Validate content plan
         run: python scripts/validate_plan.py
 
+      - name: Audit source coverage
+        run: python scripts/audit_sources.py
+
       - name: Test static build
         run: python scripts/build_site.py
 
