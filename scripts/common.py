@@ -27,6 +27,7 @@ FAVICON_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 </svg>'''
 BRAND_MARK_HTML = '''<span class="brand-mark hl-logo" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M8.5 17.5 18 9.5l9.5 8v10H22v-6.5h-8v6.5H8.5z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/><path d="M27.5 5.5v5M25 8h5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>'''
 BRAND_MARK_STYLE = '''<style id="hl-brand-mark-style">.brand-mark.hl-logo{display:grid;place-items:center;background:linear-gradient(145deg,#347863,#245747);color:#fff;box-shadow:0 5px 14px rgba(35,86,71,.16);transition:.16s ease}.brand-mark.hl-logo svg{width:27px;height:27px;display:block}.brand:hover .brand-mark.hl-logo{transform:translateY(-1px);box-shadow:0 7px 18px rgba(35,86,71,.22)}</style>'''
+MOBILE_STYLE = '''<style id="hl-mobile-style">@media(max-width:760px){.site-header .nav-wrap{min-height:auto;display:block;padding:10px 0}.site-header .brand{width:max-content}.site-header .nav-wrap nav{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding:7px 0 2px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}.site-header .nav-wrap nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 8px}#hl-consent button{min-height:44px}}</style>'''
 
 GA_SNIPPET = f'''<!-- Google tag (gtag.js) -->
 <script>
@@ -104,6 +105,8 @@ def _write_text_with_analytics(self: Path, data: str, *args: Any, **kwargs: Any)
             data = data.replace("<head>", "<head>\n" + FAVICON_LINK, 1)
         if 'id="hl-brand-mark-style"' not in data and "<head>" in data:
             data = data.replace("<head>", "<head>\n" + BRAND_MARK_STYLE, 1)
+        if 'id="hl-mobile-style"' not in data and "<head>" in data:
+            data = data.replace("<head>", "<head>\n" + MOBILE_STYLE, 1)
         data = data.replace('<span class="brand-mark">HL</span>', BRAND_MARK_HTML)
         if "id=\"hl-consent\"" not in data and "</body>" in data:
             data = data.replace("</body>", CONSENT_BANNER + "\n</body>", 1)
