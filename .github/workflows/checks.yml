@@ -44,3 +44,6 @@ jobs:
 
       - name: Audit performance and mobile basics
         run: python scripts/audit_performance.py
+
+      - name: Audit privacy and consent controls
+        run: python scripts/audit_privacy.py
