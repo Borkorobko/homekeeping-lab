@@ -7,6 +7,7 @@ on:
       - "scripts/build_site.py"
       - "scripts/add_social_preview.py"
       - "scripts/audit_links.py"
+      - "scripts/audit_indexability.py"
       - "config/site.json"
       - "requirements.txt"
 
@@ -42,6 +43,9 @@ jobs:
 
       - name: Audit internal links and breadcrumbs
         run: python scripts/audit_links.py
+
+      - name: Audit sitemap and indexability
+        run: python scripts/audit_indexability.py
 
       - name: Commit rebuilt site
         run: |
