@@ -56,6 +56,9 @@ jobs:
       - name: Audit sitemap and indexability
         run: python scripts/audit_indexability.py
 
+      - name: Audit performance and mobile basics
+        run: python scripts/audit_performance.py
+
       - name: Validate plan after pipeline
         run: python scripts/validate_plan.py
 
