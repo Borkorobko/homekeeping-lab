@@ -8,6 +8,7 @@ on:
       - "scripts/add_social_preview.py"
       - "scripts/audit_links.py"
       - "scripts/audit_indexability.py"
+      - "scripts/audit_performance.py"
       - "config/site.json"
       - "requirements.txt"
 
@@ -46,6 +47,9 @@ jobs:
 
       - name: Audit sitemap and indexability
         run: python scripts/audit_indexability.py
+
+      - name: Audit performance and mobile basics
+        run: python scripts/audit_performance.py
 
       - name: Commit rebuilt site
         run: |
