@@ -32,6 +32,9 @@ jobs:
       - name: Validate content plan
         run: python scripts/validate_plan.py
 
+      - name: Audit source coverage
+        run: python scripts/audit_sources.py
+
       - name: Generate one eligible draft
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
