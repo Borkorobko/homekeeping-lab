@@ -53,6 +53,9 @@ jobs:
       - name: Audit internal links and breadcrumbs
         run: python scripts/audit_links.py
 
+      - name: Audit sitemap and indexability
+        run: python scripts/audit_indexability.py
+
       - name: Validate plan after pipeline
         run: python scripts/validate_plan.py
 
