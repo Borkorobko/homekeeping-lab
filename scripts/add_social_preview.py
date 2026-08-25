@@ -128,9 +128,23 @@ def extract(pattern: str, text: str, default: str) -> str:
     return html.unescape(match.group(1).strip()) if match else default
 
 
+def optimize_search_snippet(text: str) -> str:
+    """Keep guide title tags compact without changing visible H1 article titles."""
+    canonical = extract(r'<link\s+rel="canonical"\s+href="([^"]*)"', text, "")
+    title = extract(r"<title>(.*?)</title>", text, "")
+    suffix = " | Homekeeping Lab"
+
+    if "/guides/" in canonical and title.endswith(suffix) and len(title) > 60:
+        compact = title[: -len(suffix)].strip()
+        text = re.sub(r"<title>.*?</title>", f"<title>{html.escape(compact)}</title>", text, count=1, flags=re.IGNORECASE | re.DOTALL)
+
+    return text
+
+
 def inject_meta() -> None:
     for path in SITE_DIR.rglob("*.html"):
         text = path.read_text(encoding="utf-8")
+        text = optimize_search_snippet(text)
 
         if path.name == "404.html":
             text = text.replace(
@@ -227,9 +241,50 @@ def enhance_structured_data() -> None:
             path.write_text(updated, encoding="utf-8")
 
 
+def audit_search_snippets() -> None:
+    titles: dict[str, str] = {}
+    descriptions: dict[str, str] = {}
+    problems: list[str] = []
+
+    for path in SITE_DIR.rglob("*.html"):
+        text = path.read_text(encoding="utf-8")
+        robots = extract(r'<meta\s+name="robots"\s+content="([^"]*)"', text, "")
+        if "noindex" in robots.lower():
+            continue
+
+        title = extract(r"<title>(.*?)</title>", text, "")
+        description = extract(r'<meta\s+name="description"\s+content="([^"]*)"', text, "")
+        canonical = extract(r'<link\s+rel="canonical"\s+href="([^"]*)"', text, str(path))
+
+        if not title:
+            problems.append(f"missing title: {canonical}")
+        elif len(title) > 60:
+            problems.append(f"title over 60 chars ({len(title)}): {canonical}")
+        if not description:
+            problems.append(f"missing meta description: {canonical}")
+        elif len(description) > 155:
+            problems.append(f"meta description over 155 chars ({len(description)}): {canonical}")
+
+        if title in titles and title:
+            problems.append(f"duplicate title: {canonical} and {titles[title]}")
+        elif title:
+            titles[title] = canonical
+
+        if description in descriptions and description:
+            problems.append(f"duplicate meta description: {canonical} and {descriptions[description]}")
+        elif description:
+            descriptions[description] = canonical
+
+    if problems:
+        raise RuntimeError("SEO snippet audit failed:\n - " + "\n - ".join(problems))
+
+    print(f"SEO snippet audit passed for {len(titles)} indexable pages.")
+
+
 if __name__ == "__main__":
     make_preview()
     make_publisher_logo()
     inject_meta()
     enhance_structured_data()
+    audit_search_snippets()
     print(f"Wrote {OUT_PATH}, {PUBLISHER_LOGO_PATH}, and enhanced social/Article metadata.")
