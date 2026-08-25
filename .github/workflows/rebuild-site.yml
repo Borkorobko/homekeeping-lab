@@ -9,6 +9,7 @@ on:
       - "scripts/audit_links.py"
       - "scripts/audit_indexability.py"
       - "scripts/audit_performance.py"
+      - "scripts/audit_privacy.py"
       - "config/site.json"
       - "requirements.txt"
 
@@ -50,6 +51,9 @@ jobs:
 
       - name: Audit performance and mobile basics
         run: python scripts/audit_performance.py
+
+      - name: Audit privacy and consent controls
+        run: python scripts/audit_privacy.py
 
       - name: Commit rebuilt site
         run: |
