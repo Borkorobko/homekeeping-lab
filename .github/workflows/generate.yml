@@ -50,6 +50,9 @@ jobs:
       - name: Build social preview and metadata
         run: python scripts/add_social_preview.py
 
+      - name: Audit internal links and breadcrumbs
+        run: python scripts/audit_links.py
+
       - name: Validate plan after pipeline
         run: python scripts/validate_plan.py
 
