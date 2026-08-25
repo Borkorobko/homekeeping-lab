@@ -1,0 +1,18 @@
+{
+  "article_id": 61,
+  "topic": "How to Clean a Wooden Cutting Board",
+  "verified_at": "2026-08-25",
+  "notes": "Food-safety guidance controls. Recommend hot soapy water after each use, rinsing and thorough drying. Keep raw-meat cross-contamination guidance explicit. Do not invent sanitizer ratios beyond the verified source, and if bleach sanitizing is mentioned, use only the exact source-supported dilution and never mix bleach with other cleaners. Replace boards that are excessively worn or have hard-to-clean grooves.",
+  "sources": [
+    {
+      "title": "Cutting Boards",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/cutting-boards",
+      "authority": "USDA Food Safety and Inspection Service"
+    },
+    {
+      "title": "Science and Our Food Supply: Food Safety A to Z",
+      "url": "https://www.fda.gov/downloads/food/foodscienceresearch/toolsmaterials/ucm430363.pdf",
+      "authority": "U.S. Food and Drug Administration"
+    }
+  ]
+}
