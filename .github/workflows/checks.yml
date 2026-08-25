@@ -41,3 +41,6 @@ jobs:
 
       - name: Audit sitemap and indexability
         run: python scripts/audit_indexability.py
+
+      - name: Audit performance and mobile basics
+        run: python scripts/audit_performance.py
