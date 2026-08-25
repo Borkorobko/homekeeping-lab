@@ -5,7 +5,9 @@ on:
     paths:
       - "scripts/common.py"
       - "scripts/build_site.py"
+      - "scripts/add_social_preview.py"
       - "config/site.json"
+      - "requirements.txt"
 
 permissions:
   contents: write
@@ -28,8 +30,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip -r requirements.txt
+
       - name: Build static site
         run: python scripts/build_site.py
+
+      - name: Build social preview and metadata
+        run: python scripts/add_social_preview.py
 
       - name: Commit rebuilt site
         run: |
