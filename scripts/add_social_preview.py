@@ -128,7 +128,17 @@ def extract(pattern: str, text: str, default: str) -> str:
 def inject_meta() -> None:
     for path in SITE_DIR.rglob("*.html"):
         text = path.read_text(encoding="utf-8")
+
+        # Error pages should never compete with real content in search results.
+        if path.name == "404.html":
+            text = text.replace(
+                '<meta name="robots" content="index,follow,max-image-preview:large">',
+                '<meta name="robots" content="noindex,follow">',
+                1,
+            )
+
         if 'property="og:image"' in text:
+            path.write_text(text, encoding="utf-8")
             continue
 
         title = extract(r"<title>(.*?)</title>", text, "Homekeeping Lab")
