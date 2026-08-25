@@ -29,3 +29,6 @@ jobs:
 
       - name: Test static build
         run: python scripts/build_site.py
+
+      - name: Audit internal links and breadcrumbs
+        run: python scripts/audit_links.py
