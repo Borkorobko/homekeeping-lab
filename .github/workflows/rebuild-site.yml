@@ -6,6 +6,7 @@ on:
       - "scripts/common.py"
       - "scripts/build_site.py"
       - "scripts/add_social_preview.py"
+      - "scripts/audit_links.py"
       - "config/site.json"
       - "requirements.txt"
 
@@ -38,6 +39,9 @@ jobs:
 
       - name: Build social preview and metadata
         run: python scripts/add_social_preview.py
+
+      - name: Audit internal links and breadcrumbs
+        run: python scripts/audit_links.py
 
       - name: Commit rebuilt site
         run: |
