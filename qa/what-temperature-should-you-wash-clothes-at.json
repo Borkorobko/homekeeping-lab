@@ -1,0 +1,11 @@
+{
+  "article_id": 4,
+  "slug": "what-temperature-should-you-wash-clothes-at",
+  "checked_at": "2026-08-26T09:04:05.880914+00:00",
+  "word_count": 756,
+  "summary_characters": 156,
+  "passed": false,
+  "reasons": [
+    "summary too long: 156 characters (maximum 150)"
+  ]
+}

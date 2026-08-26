@@ -1,0 +1,101 @@
+{
+  "title": "What Temperature Should You Wash Clothes At?",
+  "summary": "Wash clothes at the temperature indicated on their care label, using cooler settings for delicate fabrics and warmer for durable or hygiene-sensitive items.",
+  "quick_answer": "Always check the garment care label first to determine the maximum allowed wash temperature, which is represented by a specific number in the GINETEX wash symbol or by terms like cold, warm, or hot on U.S.-style labels. Washing at a lower temperature than indicated is generally safe and gentler on fabrics. Higher temperatures might be necessary for heavily soiled clothes or for hygienic reasons, but exceeding the label’s maximum can cause shrinkage, color fading, or fabric damage. Adjust your washing temperature based on fabric type, soil level, and any hygiene needs, but when in doubt, default to the label’s instructions.",
+  "items_needed": [
+    "Laundry detergent",
+    "Access to a washing machine with temperature controls",
+    "Garment care labels",
+    "Optional: Stain remover (if needed)"
+  ],
+  "steps": [
+    {
+      "title": "Check the Garment Care Label",
+      "body": "Locate the care label on your clothing and identify the washing temperature symbol or written instructions (cold, warm, hot). These specify the maximum temperature allowed."
+    },
+    {
+      "title": "Select the Appropriate Wash Temperature",
+      "body": "Set your washing machine to the temperature indicated or lower. Use cold or warm settings for delicate or synthetic fabrics and hotter settings for cottons or heavy soiling, respecting label limits."
+    },
+    {
+      "title": "Separate Laundry by Fabric and Soil Level",
+      "body": "Sort clothes into groups like delicates, colors, whites, and heavily soiled items to optimize washing temperature and avoid damage or color transfer."
+    },
+    {
+      "title": "Adjust for Hygiene-Sensitive Items When Needed",
+      "body": "For items needing extra disinfection (such as bedding or cloth diapers), follow label instructions and consider high-temperature washing only if safe for the fabric."
+    }
+  ],
+  "mistakes": [
+    "Ignoring care labels and washing at too high a temperature can damage or shrink clothing.",
+    "Using hot water for all clothes is unnecessary and may fade colors or weaken fibers.",
+    "Mixing hygiene-sensitive items with regular laundry without proper temperature may not sanitize effectively."
+  ],
+  "safety_notes": [
+    "Never exceed the washing temperature recommended on the care label to avoid fabric damage.",
+    "Check your washing machine’s manual for correct detergent dosing and placement especially when changing water temperatures.",
+    "Do not mix bleach with ammonia, vinegar, or other cleaners unless the product label explicitly permits it."
+  ],
+  "sections": [
+    {
+      "heading": "Understanding Washing Temperature Symbols",
+      "body": "The GINETEX system uses a number inside a tub symbol to show the maximum water temperature allowed for that garment, such as 40°C or 60°C. In the U.S., labels may say cold, warm, or hot instead. The number or instruction indicates the highest temperature the fabric can safely handle; washing at lower temperatures is generally allowed and gentler. Always prioritize these label instructions to protect the fabric’s integrity and color.",
+      "bullets": [
+        "Number on symbol = maximum wash temperature in Celsius",
+        "Cold: usually up to 30°C",
+        "Warm: approximately 40-60°C",
+        "Hot: 60°C or higher, depending on garment"
+      ]
+    },
+    {
+      "heading": "Choosing Temperature Based on Fabric Type",
+      "body": "Cotton and linen fabrics can usually handle warmer temperatures, which helps to clean heavily soiled or durable items effectively. Synthetics, wool, silk, and delicate fabrics require cooler washing to avoid shrinkage, deformation, or color loss. Using the correct temperature ensures that fibers maintain strength and appearance across multiple washes.",
+      "bullets": [
+        "Wash cottons and linens on warm or hot (within label limits)",
+        "Use cold or warm water for synthetics and delicate fabrics",
+        "Always err on the side of cooler washes for unknown or blended fabrics"
+      ]
+    },
+    {
+      "heading": "When to Use Higher Temperatures",
+      "body": "Higher temperatures may be necessary to remove stubborn stains, kill germs, or sanitize cloth items such as dish towels, bedding, or cloth diapers. However, only use hotter settings if the fabric care label allows, as excessive heat can cause fading, shrinkage, or fiber weakening. For sensitive fabrics, consider alternative cleaning methods if high-temperature washing is not permitted.",
+      "bullets": [
+        "High temps help disinfect fabric and remove oils or heavy soils",
+        "Follow label care instructions strictly when using hot water",
+        "Use alternative sanitizing products if high heat is unsafe for fabric"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I always wash clothes in cold water to save energy?",
+      "answer": "Cold water washing is suitable for most lightly soiled clothes and delicate fabrics, but heavily soiled or hygienically sensitive items may require warmer water within label limits."
+    },
+    {
+      "question": "What happens if I accidentally wash clothes at a higher temperature than indicated?",
+      "answer": "Washing at higher temperatures than advised can cause shrinkage, color fading, and weaken fabric fibers, potentially ruining the garment."
+    },
+    {
+      "question": "Are there benefits to washing clothes at higher temperatures?",
+      "answer": "Yes, higher temperatures improve cleaning effectiveness, remove tough stains, and help disinfect fabrics, but only use higher settings if the care label permits."
+    }
+  ],
+  "meta": {
+    "id": 4,
+    "slug": "what-temperature-should-you-wash-clothes-at",
+    "category": "Laundry",
+    "cluster": "Laundry Basics",
+    "intent": "Informational",
+    "risk_level": 0,
+    "source_required": true,
+    "parent_hub": "/laundry/",
+    "related_ids": [
+      1,
+      5,
+      11,
+      13
+    ],
+    "generated_at": "2026-08-26T09:04:05.672204+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
