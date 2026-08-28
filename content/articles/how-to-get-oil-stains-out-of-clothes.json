@@ -1,0 +1,104 @@
+{
+  "title": "How to Get Oil Stains Out of Clothes",
+  "summary": "Remove oil stains from clothes safely by treating promptly, using absorbents, and washing with proper detergents.",
+  "quick_answer": "To remove oil stains from clothes, first gently blot excess oil with a paper towel or cloth without rubbing. Sprinkle a dry absorbent like baking soda or cornstarch on the stain and let it sit to soak up the oil. Brush off the powder and then apply a liquid laundry detergent directly to the stain, gently working it in. Wash the garment following the care label instructions using the warmest water safe for the fabric. Before drying, check that the stain is gone because heat can set oil stains permanently. Repeat treatment as needed. Always test stain removers on an inconspicuous area to avoid fabric damage.",
+  "items_needed": [
+    "Paper towels or clean cloth",
+    "Absorbent powder (baking soda, cornstarch, or talcum powder)",
+    "Liquid laundry detergent",
+    "Soft brush or toothbrush",
+    "Washing machine or sink for handwashing"
+  ],
+  "steps": [
+    {
+      "title": "Blot excess oil carefully",
+      "body": "Use a paper towel or clean cloth to gently blot up as much oil as possible without rubbing it deeper into the fabric."
+    },
+    {
+      "title": "Apply absorbent powder",
+      "body": "Cover the stained area with baking soda, cornstarch, or talcum powder. Let it sit for at least 15 minutes to absorb the oil, longer if possible."
+    },
+    {
+      "title": "Brush off powder and apply detergent",
+      "body": "Brush away the powder gently. Apply a small amount of liquid laundry detergent directly onto the stain, working it in carefully with your fingers or a soft brush."
+    },
+    {
+      "title": "Wash according to fabric care",
+      "body": "Wash the garment based on its label instructions, using the warmest water recommended for the fabric. Avoid putting the item in the dryer until you confirm the stain is fully removed."
+    },
+    {
+      "title": "Check stain before drying",
+      "body": "After washing, inspect the stain. If it remains, repeat the treatment steps. Drying clothes with an oil stain can set it permanently, so avoid the dryer until the stain is gone."
+    }
+  ],
+  "mistakes": [
+    "Rubbing the oil stain which pushes the oil deeper into the fibers, worsening the stain",
+    "Applying heat (dryer or iron) before removing the stain, which can permanently set oil stains",
+    "Using bleach or harsh chemicals without checking fabric compatibility or product label, risking damage",
+    "Skipping a patch test when using stain removers on delicate or unknown fabrics"
+  ],
+  "safety_notes": [
+    "Always follow garment care labels and product instructions for stain removers and detergents.",
+    "Avoid mixing cleaning agents unless the manufacturer explicitly states the combination is safe.",
+    "Test any cleaning product on a hidden area to check for colorfastness or fabric reaction."
+  ],
+  "sections": [
+    {
+      "heading": "Why absorbent powders help with oil stains",
+      "body": "Absorbent powders like baking soda, cornstarch, and talcum powder help lift fresh oil stains by drawing out the oil from the fabric fibers. This makes the stain easier to treat with detergent and reduces the amount of oil that can set permanently. Letting the powder sit long enough is important for effective absorption.",
+      "bullets": [
+        "Baking soda is widely available and safe for many fabrics.",
+        "Cornstarch is gentle and effective on fresh stains.",
+        "Talcum powder is an alternative but test on delicate fabrics first."
+      ]
+    },
+    {
+      "heading": "Choosing the right detergent for oil stains",
+      "body": "Liquid laundry detergents with grease-fighting enzymes or surfactants are generally best for oil stains. Applying detergent directly to the stain before washing helps break down the oil molecules. Always check your detergent label for specific directions and fabric suitability.",
+      "bullets": [
+        "Avoid powdered detergents directly on stains as they may not dissolve fully.",
+        "Follow label guidance on water temperature to protect fabric and cleaning efficacy."
+      ]
+    },
+    {
+      "heading": "Material-specific considerations",
+      "body": "Delicate fabrics like silk or wool require extra care. Use mild detergents recommended for these materials and avoid aggressive scrubbing. For synthetic fabrics, check manufacturer guidance to prevent damage. When unsure, a professional cleaner may be safer.",
+      "bullets": [
+        "Test any treatment on a hidden seam or hem first.",
+        "Avoid harsh rubbing or chemicals on delicate textiles."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use vinegar or bleach to remove oil stains?",
+      "answer": "No, vinegar or bleach can damage fabrics and should not be mixed with other cleaners; always follow product labels and garment care instructions."
+    },
+    {
+      "question": "What if the oil stain is old or dried?",
+      "answer": "For older stains, repeat the absorbent powder and detergent treatment multiple times before washing, but persistent stains may require specialized stain removers or professional cleaning."
+    },
+    {
+      "question": "Is it okay to put an oil-stained garment in the dryer?",
+      "answer": "No, heat from the dryer can set oil stains permanently, so only dry the garment once the stain is completely removed."
+    }
+  ],
+  "meta": {
+    "id": 6,
+    "slug": "how-to-get-oil-stains-out-of-clothes",
+    "category": "Stain Removal",
+    "cluster": "Food & Grease Stains",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      7,
+      9,
+      10,
+      11
+    ],
+    "generated_at": "2026-08-28T20:12:50.913528+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}

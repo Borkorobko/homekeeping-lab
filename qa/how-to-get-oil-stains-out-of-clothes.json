@@ -1,0 +1,16 @@
+{
+  "article_id": 6,
+  "slug": "how-to-get-oil-stains-out-of-clothes",
+  "checked_at": "2026-08-28T20:12:51.209029+00:00",
+  "word_count": 730,
+  "summary_characters": 113,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-08-28T20:12:51.254650+00:00",
+    "risk_level": 0,
+    "source_required": false,
+    "passed": true,
+    "reasons": []
+  }
+}
