@@ -1,0 +1,16 @@
+{
+  "article_id": 7,
+  "slug": "how-to-remove-coffee-stains-from-clothes",
+  "checked_at": "2026-08-31T16:10:58.745677+00:00",
+  "word_count": 700,
+  "summary_characters": 89,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-08-31T16:10:58.794682+00:00",
+    "risk_level": 0,
+    "source_required": false,
+    "passed": true,
+    "reasons": []
+  }
+}

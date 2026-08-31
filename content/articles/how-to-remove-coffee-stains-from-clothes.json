@@ -1,0 +1,104 @@
+{
+  "title": "How to Remove Coffee Stains From Clothes",
+  "summary": "Learn safe, effective ways to remove coffee stains from clothes without damaging fabrics.",
+  "quick_answer": "To remove coffee stains from clothes, first blot the stain gently to absorb excess liquid without rubbing. Rinse the fabric under cold water from the back of the stain to flush out coffee. Pre-treat the stain with a liquid laundry detergent or stain remover, following product label instructions carefully. Launder the garment according to its care label using the warmest water safe for the fabric. Before drying, check if the stain is gone, as drying can set the stain permanently. Repeat treatment if necessary. For delicate or non-washable fabrics, consult the care label and consider professional cleaning.",
+  "items_needed": [
+    "Clean white cloth or paper towels",
+    "Cold water",
+    "Liquid laundry detergent or stain remover",
+    "Washing machine or basin for hand washing",
+    "Optional: White vinegar or baking soda (test first)"
+  ],
+  "steps": [
+    {
+      "title": "Blot the Stain",
+      "body": "Use a clean white cloth or paper towels to gently blot the coffee stain, absorbing as much liquid as possible without rubbing or spreading it."
+    },
+    {
+      "title": "Rinse With Cold Water",
+      "body": "Run cold water through the back of the stained area to flush out the coffee. Avoid hot water as it can set the stain."
+    },
+    {
+      "title": "Apply Detergent or Stain Remover",
+      "body": "Pre-treat the stain with a liquid laundry detergent or a commercially available stain remover. Follow the instructions on the product label carefully to avoid fabric damage."
+    },
+    {
+      "title": "Launder According to Care Label",
+      "body": "Wash the garment using the warmest water temperature safe for the fabric according to the care label. Use a regular laundry cycle."
+    },
+    {
+      "title": "Check Before Drying",
+      "body": "Inspect the garment after washing to ensure the stain is fully removed. Avoid machine drying until the stain is gone to prevent it from setting permanently. Repeat treatment if needed."
+    }
+  ],
+  "mistakes": [
+    "Rubbing the stain immediately, which can spread the coffee and embed it deeper into fibers.",
+    "Using hot water before stain removal, as heat can set coffee stains permanently.",
+    "Drying stained clothes before the stain is completely removed, making it nearly impossible to treat later.",
+    "Mixing cleaning products like bleach with vinegar or ammonia without manufacturer approval, which can create harmful fumes or damage fabrics."
+  ],
+  "safety_notes": [
+    "Always check garment care labels before applying any cleaning product or water temperature treatment.",
+    "Avoid mixing cleaning chemicals unless label instructions explicitly permit it.",
+    "Test stain removers or homemade remedies on an inconspicuous fabric area to prevent discoloration or damage.",
+    "Keep products out of reach of children and pets."
+  ],
+  "sections": [
+    {
+      "heading": "Why Cold Water First?",
+      "body": "Cold water helps prevent the coffee stain from setting. Hot water can cause the stain's proteins and tannins to bond permanently with fabric fibers, making removal difficult.",
+      "bullets": [
+        "Always flush stains from the back to push stain out of fibers.",
+        "Cold water reduces the risk of spreading the stain."
+      ]
+    },
+    {
+      "heading": "Pre-Treatment Options",
+      "body": "Use liquid laundry detergent as a pre-treatment because it penetrates fabric fibers and breaks down coffee stain components. Commercial stain removers can be effective but always follow label instructions. For stubborn stains, gentle natural options like white vinegar or baking soda may help but test first for colorfastness.",
+      "bullets": [
+        "Avoid bleach on colored fabrics unless product label allows.",
+        "Do not use undiluted vinegar or bleach on delicate materials like wool or silk."
+      ]
+    },
+    {
+      "heading": "Considerations for Delicate Fabrics",
+      "body": "Delicate fabrics such as silk, wool, or linen require special care. Avoid vigorous rubbing or harsh chemicals. Hand wash gently or take the item to a professional cleaner if the care label suggests dry cleaning only.",
+      "bullets": [
+        "Spot test any product or remedy.",
+        "Always follow the garment’s care label instructions."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use bleach to remove coffee stains from white clothes?",
+      "answer": "You can use bleach on white clothes only if the fabric care label permits it and you follow the product label’s directions; avoid mixing bleach with other cleaners."
+    },
+    {
+      "question": "What if the coffee stain is old and set in?",
+      "answer": "Older stains may be harder to remove but pre-treating with a stain remover and laundering several times may help; consider professional cleaning for stubborn stains."
+    },
+    {
+      "question": "Is it okay to use vinegar or baking soda for coffee stains?",
+      "answer": "Vinegar and baking soda can be used as gentle alternatives but should be tested on an inconspicuous area first and never mixed directly with bleach or ammonia-based products."
+    }
+  ],
+  "meta": {
+    "id": 7,
+    "slug": "how-to-remove-coffee-stains-from-clothes",
+    "category": "Stain Removal",
+    "cluster": "Food & Drink Stains",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      6,
+      8,
+      9,
+      11
+    ],
+    "generated_at": "2026-08-31T16:10:58.610136+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
