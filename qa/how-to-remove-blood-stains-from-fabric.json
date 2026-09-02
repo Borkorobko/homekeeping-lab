@@ -1,0 +1,16 @@
+{
+  "article_id": 8,
+  "slug": "how-to-remove-blood-stains-from-fabric",
+  "checked_at": "2026-09-02T12:47:36.110013+00:00",
+  "word_count": 664,
+  "summary_characters": 118,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-09-02T12:47:36.159348+00:00",
+    "risk_level": 1,
+    "source_required": true,
+    "passed": true,
+    "reasons": []
+  }
+}

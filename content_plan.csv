@@ -6,7 +6,7 @@ ID,Title,Category,Cluster,Intent,Priority,RiskLevel,SourceRequired,ParentHub,Rel
 5,How to Remove Detergent Residue From Clothes,Laundry,Laundry Problems,Problem Solving,2,0,no,/laundry/,1|2|3|4,Pending,,how-to-remove-detergent-residue-from-clothes
 6,How to Get Oil Stains Out of Clothes,Stain Removal,Food & Grease Stains,Problem Solving,1,0,no,/stain-removal/,7|9|10|11,Published,2026-08-28,how-to-get-oil-stains-out-of-clothes
 7,How to Remove Coffee Stains From Clothes,Stain Removal,Food & Drink Stains,Problem Solving,1,0,no,/stain-removal/,6|8|9|11,Published,2026-08-31,how-to-remove-coffee-stains-from-clothes
-8,How to Remove Blood Stains From Fabric,Stain Removal,Biological Stains,Problem Solving,1,1,yes,/stain-removal/,7|9|11|12,Pending,,how-to-remove-blood-stains-from-fabric
+8,How to Remove Blood Stains From Fabric,Stain Removal,Biological Stains,Problem Solving,1,1,yes,/stain-removal/,7|9|11|12,Published,2026-09-02,how-to-remove-blood-stains-from-fabric
 9,How to Remove Deodorant Stains From Shirts,Stain Removal,Body Care Stains,Problem Solving,1,0,no,/stain-removal/,6|7|10|11,Pending,,how-to-remove-deodorant-stains-from-shirts
 10,How to Get Makeup Out of Clothes,Stain Removal,Body Care Stains,Problem Solving,2,0,no,/stain-removal/,6|9|11|12,Pending,,how-to-get-makeup-out-of-clothes
 11,How to Wash Cotton Without Shrinking It,Fabric Care,Cotton,Informational,1,0,yes,/fabric-care/,4|6|8|12,Pending,,how-to-wash-cotton-without-shrinking-it

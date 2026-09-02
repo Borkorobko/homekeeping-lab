@@ -1,0 +1,101 @@
+{
+  "title": "How to Remove Blood Stains From Fabric",
+  "summary": "Use cold water for fresh blood stains; enzyme pretreatment for dried stains; avoid heat and follow fabric care labels.",
+  "quick_answer": "For fresh blood stains, rinse or soak the fabric in cold water immediately to prevent setting. For dried or stubborn stains, apply an enzyme-based pretreatment if the care label allows, then wash with the recommended detergent in cold water. Avoid using hot water or drying the fabric before the stain is fully removed, as heat can permanently set blood stains. Always check the fabric’s care instructions before using any stain remover or bleach. If bleach is safe for the fabric, follow the product label explicitly. If unsure of fabric compatibility, perform a patch test on an inconspicuous area first.",
+  "items_needed": [
+    "cold water",
+    "enzyme-based stain remover (if fabric care allows)",
+    "detergent compatible with fabric",
+    "clean cloth or sponge"
+  ],
+  "steps": [
+    {
+      "title": "Rinse Fresh Blood Stains with Cold Water",
+      "body": "Immediately flush the stained area with cold water to dilute and loosen fresh blood. Avoid using hot water, which can cause the stain to set permanently."
+    },
+    {
+      "title": "Apply Enzyme Pretreatment for Dried Stains",
+      "body": "If the stain is dried or old, apply an enzyme-based stain remover according to the product instructions, but only if the fabric care label permits such treatment."
+    },
+    {
+      "title": "Wash Fabric in Cold Water with Detergent",
+      "body": "Launder the fabric using cold water and the appropriate detergent specified on the garment’s label. Do not use hot water, as it may fix the stain."
+    },
+    {
+      "title": "Avoid Heat Until the Stain Is Removed",
+      "body": "Do not put the fabric in the dryer or iron it until you are sure the blood stain is completely gone, since heat can make the stain permanent."
+    }
+  ],
+  "mistakes": [
+    "Using hot water on blood stains, which sets the stains permanently.",
+    "Drying or ironing fabric before stain removal, which locks the stain in.",
+    "Applying bleach without confirming fabric compatibility and product instructions, risking fabric damage.",
+    "Mixing bleach with other cleaners, which can produce harmful fumes."
+  ],
+  "safety_notes": [
+    "Always follow fabric care labels and product label instructions when using stain removers or bleach.",
+    "Perform a patch test on an inconspicuous area when using new products to check for fabric damage or colorfastness.",
+    "Never mix bleach with ammonia, vinegar, acids, or other cleaners unless explicitly permitted by the manufacturer."
+  ],
+  "sections": [
+    {
+      "heading": "Why Cold Water Is Essential for Blood Stain Removal",
+      "body": "Cold water prevents blood proteins from coagulating and bonding tightly to fabric fibers. Hot water causes the proteins to bind permanently, making stains nearly impossible to remove. Starting with cold water helps to flush out the blood while it is still fresh.",
+      "bullets": [
+        "Cold water keeps blood proteins soluble for removal.",
+        "Hot water cooks the proteins into fabric fibers.",
+        "Always check water temperature before washing."
+      ]
+    },
+    {
+      "heading": "Role of Enzyme Pretreatment on Dried Blood Stains",
+      "body": "Enzyme-based stain removers break down the protein structures in dried blood, making the stain easier to lift during washing. These enzymes target biological stains specifically, but their use depends on fabric type and manufacturer recommendations.",
+      "bullets": [
+        "Check the garment care label before enzyme use.",
+        "Apply according to the stain remover’s instructions.",
+        "Rinse well after pretreatment before laundering."
+      ]
+    },
+    {
+      "heading": "When and How to Use Bleach Safely",
+      "body": "Bleach can sometimes remove blood stains but only if it is safe for the fabric. Check the garment label and bleach product label to ensure compatibility. Follow all instructions exactly and never mix bleach with other chemicals, as this can produce hazardous fumes and damage clothing.",
+      "bullets": [
+        "Use only fabrics specified as bleach safe.",
+        "Follow bleach product label directions carefully.",
+        "Avoid bleach on delicate or colored fabrics without explicit permission."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use hot water to remove blood stains?",
+      "answer": "No, hot water can set blood stains permanently. Always use cold water first."
+    },
+    {
+      "question": "Is it safe to use bleach on blood stains?",
+      "answer": "Only use bleach if the fabric care label and bleach product label both indicate it is safe. Never mix bleach with other cleaners."
+    },
+    {
+      "question": "What if the stain remains after washing?",
+      "answer": "Do not dry the garment; repeat enzyme pretreatment and washing steps or consult a professional cleaner."
+    }
+  ],
+  "meta": {
+    "id": 8,
+    "slug": "how-to-remove-blood-stains-from-fabric",
+    "category": "Stain Removal",
+    "cluster": "Biological Stains",
+    "intent": "Problem Solving",
+    "risk_level": 1,
+    "source_required": true,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      7,
+      9,
+      11,
+      12
+    ],
+    "generated_at": "2026-09-02T12:47:35.975258+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
