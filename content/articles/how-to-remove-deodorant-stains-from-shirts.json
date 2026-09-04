@@ -1,0 +1,102 @@
+{
+  "title": "How to Remove Deodorant Stains From Shirts",
+  "summary": "Effective, safe methods to remove deodorant stains from shirts without damaging fabric.",
+  "quick_answer": "To remove deodorant stains, first check your shirt’s care label and test any cleaner in an inconspicuous spot. Gently scrape off excess deodorant, then pretreat the stain with a stain remover or liquid detergent according to product instructions. Wash the shirt in the warmest water safe for the fabric. For persistent stains, applying a paste of baking soda and water can help lift residues before rewashing. Avoid using bleach unless the shirt’s label explicitly permits it and never mix bleach with ammonia or vinegar. Always air dry your shirt after treatment to ensure the stain is fully removed before applying heat.",
+  "items_needed": [
+    "mild liquid detergent or stain remover",
+    "soft cloth or sponge",
+    "baking soda (optional)",
+    "water",
+    "care label or fabric information"
+  ],
+  "steps": [
+    {
+      "title": "Check care label and test cleaner",
+      "body": "Always start by reading your shirt’s care instructions to know what cleaning agents and water temperatures are safe. Test any stain remover or detergent on a hidden area to avoid damage or discoloration."
+    },
+    {
+      "title": "Remove excess deodorant residue",
+      "body": "Use a soft cloth, spoon edge, or your fingernail to gently scrape off dried deodorant residue from the fabric without rubbing it deeper into the fibers."
+    },
+    {
+      "title": "Apply stain remover or liquid detergent",
+      "body": "Apply a small amount of mild liquid detergent or a stain remover designed for fabrics on the stained area. Follow product directions for application and rubbing, usually involving gentle work-in and short dwell time."
+    },
+    {
+      "title": "Wash according to care label",
+      "body": "Machine wash or hand wash the shirt using the warmest water temperature allowed by the care label. Follow your detergent label and washing machine manual for dosing and settings."
+    },
+    {
+      "title": "Use baking soda paste for stubborn stains",
+      "body": "If the stain remains after washing, make a paste of baking soda and water. Apply it on the stain, gently rub it in, let it sit briefly, then wash again. Baking soda helps lift residue safely."
+    },
+    {
+      "title": "Air dry to check stain removal",
+      "body": "Avoid tumble drying until you confirm the stain is fully removed, as heat can set stains permanently. Air dry and inspect the stain once dry."
+    }
+  ],
+  "mistakes": [
+    "Using bleach without confirming fabric compatibility may cause discoloration or damage.",
+    "Mixing bleach with vinegar, ammonia, or other cleaners creates harmful fumes and should be avoided.",
+    "Rubbing stains aggressively can embed deodorant deeper into fabric fibers.",
+    "Applying heat (e.g., tumble drying) before the stain is fully gone may set the stain permanently."
+  ],
+  "safety_notes": [
+    "Follow all product label instructions for safe use of detergents and stain removers.",
+    "Always perform patch tests before using any cleaners on visible areas.",
+    "Avoid mixing household cleaners unless the product label explicitly allows it.",
+    "Use good ventilation when applying chemical-based stain removers."
+  ],
+  "sections": [
+    {
+      "heading": "Why deodorant stains form and how removal works",
+      "body": "Deodorant stains usually occur from aluminum compounds reacting with sweat, leaving white or yellow residues. These residues can bind to shirt fibers, especially cotton or synthetic blends, making removal challenging. Mild detergents break down the oils and aluminum salts, while baking soda helps physically lift residue. Heat, such as from dryers, can cause the stain to set permanently, which is why air drying is critical until stain removal is complete.",
+      "bullets": [
+        "Deodorant residues combine oils, salts, and sometimes perspiration.",
+        "Gentle cleaning targets these compounds without damaging fabric.",
+        "Heat can cause chemical residues to permanently bind to fibers."
+      ]
+    },
+    {
+      "heading": "Material-specific tips",
+      "body": "Natural fibers like cotton generally tolerate warm water and mild detergents well. Synthetic fibers (polyester, nylon) can hold deodorant stains more stubbornly but also require gentle treatment to avoid damage. Delicate fabrics such as silk or wool require specialized cleaners and should not be scrubbed aggressively. Always refer to garment care labels and consider professional cleaning for delicate or expensive items.",
+      "bullets": [
+        "Cotton: warm water and gentle detergents usually safe.",
+        "Synthetics: avoid high heat and abrasive scrubbing.",
+        "Delicates: prefer specialized cleaners and gentle handling."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use bleach to remove deodorant stains?",
+      "answer": "Only use bleach if your shirt’s care label permits it and always follow product instructions carefully. Avoid mixing bleach with other cleaners."
+    },
+    {
+      "question": "What if my shirt is dry-clean only?",
+      "answer": "For dry-clean-only garments, take the shirt to a professional cleaner rather than attempting home treatments."
+    },
+    {
+      "question": "Why do deodorant stains turn yellow over time?",
+      "answer": "Yellow stains form from the reaction between sweat, deodorant ingredients, and fabric, often worsened by heat exposure."
+    }
+  ],
+  "meta": {
+    "id": 9,
+    "slug": "how-to-remove-deodorant-stains-from-shirts",
+    "category": "Stain Removal",
+    "cluster": "Body Care Stains",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      6,
+      7,
+      10,
+      11
+    ],
+    "generated_at": "2026-09-04T12:44:44.395498+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
