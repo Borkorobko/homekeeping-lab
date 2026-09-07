@@ -1,0 +1,91 @@
+{
+  "title": "How to Wash Cotton Without Shrinking It",
+  "summary": "Follow care labels and use gentle washing and drying methods to reduce cotton shrinkage risk.",
+  "quick_answer": "To wash cotton without shrinking it, always follow the garment's care label instructions first. Use lower water temperatures and gentle washing cycles to minimize thermal and mechanical stress. Avoid high heat during drying by using air drying or low-heat settings. Keep in mind that shrinkage depends on the cotton fabric’s construction, finishing, and whether it was preshrunk, so some shrinkage cannot be completely avoided. When in doubt, test care methods on a hidden area or consult the manufacturer.",
+  "items_needed": [
+    "Washing machine with temperature and cycle settings",
+    "Mild detergent suitable for cotton",
+    "Access to care label on the garment",
+    "Drying rack or low-heat dryer"
+  ],
+  "steps": [
+    {
+      "title": "Check the Care Label",
+      "body": "Identify the manufacturer's recommended washing temperature, cycle, and drying instructions on the garment label. This is the primary guidance to avoid shrinkage."
+    },
+    {
+      "title": "Select Gentle Wash Settings",
+      "body": "Set your washing machine to a gentle or delicate cycle and use cold or warm water as specified by the label to reduce thermal shock and agitation that can cause shrinkage."
+    },
+    {
+      "title": "Use Mild Detergent",
+      "body": "Choose a detergent designed for delicate fabrics or cotton, and follow the product label for dosing. Harsh or excessive detergent use can weaken fabrics."
+    },
+    {
+      "title": "Dry Carefully",
+      "body": "Prefer air drying or drying on a low-heat setting to limit thermal and mechanical stress. Avoid high heat dryer settings, as these increase shrinkage risk."
+    }
+  ],
+  "mistakes": [
+    "Ignoring the care label can lead to inappropriate washing or drying conditions that increase shrinkage.",
+    "Using hot water or high dryer heat as it increases thermal stress causing fabric fibers to contract.",
+    "Overdrying cotton items in a machine dryer, which can cause excessive shrinkage and fabric wear."
+  ],
+  "safety_notes": [
+    "Always follow garment care labels to prevent damage from improper washing and drying.",
+    "Avoid mixing bleach with ammonia, vinegar, or other cleaners unless explicitly allowed by the product label and garment manufacturer.",
+    "Test new detergents or washing methods on small inconspicuous areas to check fabric compatibility."
+  ],
+  "sections": [
+    {
+      "heading": "Why Cotton Shrinks and How Washing Affects It",
+      "body": "Cotton shrinkage results mainly from heat and mechanical agitation which relax and contract the cotton fibers. Fabric construction, finishing processes, and preshrinking treatments play major roles in how much a garment shrinks. While low temperatures and gentle cycles reduce shrinkage risk, they do not guarantee zero shrinkage. Always check garment-specific care labels because cotton fabrics vary widely.",
+      "bullets": [
+        "Shrinkage depends on fiber type, yarn twist, fabric weave, and preshrinking.",
+        "Thermal stress from hot water and dryers relaxes cotton fibers causing them to contract.",
+        "Mechanical stress from agitation can distort fibers and enhance shrinkage."
+      ]
+    },
+    {
+      "heading": "Interpreting Care Labels for Cotton Garments",
+      "body": "Care labels provide the best instructions for washing and drying cotton items to minimize shrinkage. Look for symbols and temperature recommendations. For example, a cool wash symbol indicates a low-temperature cycle is safest. The drying section often distinguishes between tumble dry low or not recommended. Follow these instructions strictly to balance cleanliness and fabric preservation.",
+      "bullets": [
+        "Care labels control washing and drying conditions specific to that garment.",
+        "Symbols may include water temperature limits, cycle types, and drying methods.",
+        "When labels conflict with other advice, trust the label as authoritative."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I wash all cotton garments the same way to prevent shrinkage?",
+      "answer": "No, cotton garments differ by construction and finishing. Always follow each item's care label, as recommended wash and dry conditions can vary."
+    },
+    {
+      "question": "Does using cold water completely prevent cotton shrinkage?",
+      "answer": "Cold water reduces thermal stress and shrinkage risk but cannot guarantee zero shrinkage, especially if mechanical agitation and drying are harsh."
+    },
+    {
+      "question": "Is air drying cotton better than machine drying to avoid shrinkage?",
+      "answer": "Yes, air drying minimizes heat and mechanical stress that cause shrinkage. If using a dryer, choose the lowest heat setting and remove items while slightly damp."
+    }
+  ],
+  "meta": {
+    "id": 11,
+    "slug": "how-to-wash-cotton-without-shrinking-it",
+    "category": "Fabric Care",
+    "cluster": "Cotton",
+    "intent": "Informational",
+    "risk_level": 0,
+    "source_required": true,
+    "parent_hub": "/fabric-care/",
+    "related_ids": [
+      4,
+      6,
+      8,
+      12
+    ],
+    "generated_at": "2026-09-07T14:16:12.567755+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
