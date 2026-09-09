@@ -1,0 +1,104 @@
+{
+  "title": "What Laundry Symbols Mean",
+  "summary": "Laundry symbols on care labels guide how to wash, dry, iron, and treat garments safely and effectively.",
+  "quick_answer": "Laundry symbols on your garment’s care label provide essential instructions from the manufacturer on fabric treatment. A wash-tub symbol with a number indicates the maximum washing temperature in Celsius, while bars below it suggest milder mechanical action is needed. Crossed-out symbols mean that particular treatment is not allowed. Other symbols indicate drying methods, ironing guidelines, bleaching permissions, and professional cleaning instructions. Following these symbols helps maintain fabric quality and prevent damage during cleaning.",
+  "items_needed": [
+    "Garment with care label",
+    "Laundry detergent",
+    "Washing machine or hand-washing setup",
+    "Laundry appliance manual (if applicable)"
+  ],
+  "steps": [
+    {
+      "title": "Locate the Care Label",
+      "body": "Find the sewn-in label inside your garment; it contains the laundry symbols that guide wash, dry, bleach, iron, and professional cleaning."
+    },
+    {
+      "title": "Interpret Washing Instructions",
+      "body": "Look at the wash-tub symbol: the number inside shows the maximum temperature in Celsius suitable for washing this fabric. Bars underneath mean use gentler wash cycles, and a crossed-out tub means do not wash."
+    },
+    {
+      "title": "Check Drying and Bleaching Symbols",
+      "body": "Identify the square symbols for drying instructions, sometimes with dots indicating temperature or lines indicating gentle tumble or drip-dry. A triangle affects bleach use: plain allows any bleach, crossed means no bleach."
+    },
+    {
+      "title": "Follow Ironing and Professional Care Symbols",
+      "body": "An iron symbol shows if ironing is allowed and at what heat (dots indicate temperature), while a circle represents dry cleaning; crossed-out symbols mean those treatments are prohibited."
+    }
+  ],
+  "mistakes": [
+    "Ignoring the maximum wash temperature can shrink or damage fabrics.",
+    "Overusing bleach despite a crossed-out triangle may weaken fibers or cause discoloration.",
+    "Assuming no bars under the wash tub means normal, when some fabrics require gentler cycles.",
+    "Mixing treatments against label instructions risks ruining the garment or safety hazards."
+  ],
+  "safety_notes": [
+    "Never mix bleach with ammonia, vinegar, or other cleaners unless the garment manufacturer explicitly permits it.",
+    "Use care labels as manufacturer instructions for safety and fabric preservation.",
+    "Patch test unknown cleaning products where material compatibility is unclear.",
+    "Follow appliance manuals and product labels for correct detergent dosing."
+  ],
+  "sections": [
+    {
+      "heading": "Understanding Wash Symbols",
+      "body": "The wash-tub symbol indicates how to wash your garment safely. The number inside the tub reveals the maximum water temperature, in degrees Celsius, that the fabric can tolerate without damage. Bars under the tub icon suggest milder mechanical action or a gentler cycle is necessary to protect delicate fabrics. If the wash symbol is crossed out, do not wash the garment yourself; it may require professional cleaning. Always follow these guidelines to avoid shrinking, color fading, or fabric weakening.",
+      "bullets": [
+        "Maximum wash temperature shown inside the tub symbol",
+        "One bar means mild cycle; two bars mean very gentle wash",
+        "Crossed tub means 'do not wash'"
+      ]
+    },
+    {
+      "heading": "Bleaching and Drying Symbols",
+      "body": "A triangle indicates bleach use. If the triangle is empty, any bleach is allowed. If it has diagonal lines inside, only non-chlorine bleach should be used. A crossed-out triangle means do not bleach this garment. Drying symbols are square shapes with variations: a circle inside a square refers to tumble drying, with dots indicating heat level; lines may suggest drip drying or drying flat to prevent stretching. Crossed-out drying symbols mean the indicated drying method is not allowed.",
+      "bullets": [
+        "Empty triangle: bleach allowed",
+        "Triangle with lines: only non-chlorine bleach",
+        "Crossed triangle: no bleach",
+        "Square with circle: tumble dry; dots = heat level"
+      ]
+    },
+    {
+      "heading": "Ironing and Professional Care Symbols",
+      "body": "The iron symbol shows if and how to iron the garment. Dots inside the iron indicate temperature level: one dot for low, two for medium, three for high heat. A crossed iron means do not iron. A circle represents professional cleaning instructions such as dry cleaning; letters inside the circle specify solvents used. A crossed circle means no professional cleaning allowed. It is important to obey these symbols to preserve fabric integrity and appearance.",
+      "bullets": [
+        "Iron symbol with dots: temperature advice",
+        "Crossed iron: no ironing",
+        "Circle: professional cleaning instructions",
+        "Crossed circle: no professional cleaning"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does the number inside the wash tub symbol mean?",
+      "answer": "It shows the maximum water temperature in Celsius safe for washing the garment."
+    },
+    {
+      "question": "What should I do if the wash tub symbol is crossed out?",
+      "answer": "Do not wash this garment at home; it usually requires professional cleaning only."
+    },
+    {
+      "question": "Can I use any bleach if the symbol shows a triangle with lines?",
+      "answer": "No, only non-chlorine bleach is allowed when the triangle contains diagonal lines."
+    }
+  ],
+  "meta": {
+    "id": 12,
+    "slug": "what-laundry-symbols-mean",
+    "category": "Fabric Care",
+    "cluster": "Care Labels",
+    "intent": "Informational",
+    "risk_level": 0,
+    "source_required": true,
+    "parent_hub": "/fabric-care/",
+    "related_ids": [
+      4,
+      8,
+      10,
+      11
+    ],
+    "generated_at": "2026-09-09T12:59:00.310505+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
