@@ -12,7 +12,7 @@ ID,Title,Category,Cluster,Intent,Priority,RiskLevel,SourceRequired,ParentHub,Rel
 11,How to Wash Cotton Without Shrinking It,Fabric Care,Cotton,Informational,1,0,yes,/fabric-care/,4|6|8|12,QualityBlocked,,how-to-wash-cotton-without-shrinking-it
 12,What Laundry Symbols Mean,Fabric Care,Care Labels,Informational,1,0,yes,/fabric-care/,4|8|10|11,Published,2026-09-09,what-laundry-symbols-mean
 13,How to Wash Towels and Keep Them Soft,Bedding & Towels,Towels,Problem Solving,1,0,no,/bedding-towels/,4|14|15,QualityBlocked,,how-to-wash-towels-and-keep-them-soft
-14,How to Restore Absorbency to Towels,Bedding & Towels,Towels,Problem Solving,1,0,no,/bedding-towels/,13|15|1,Pending,,how-to-restore-absorbency-to-towels
+14,How to Restore Absorbency to Towels,Bedding & Towels,Towels,Problem Solving,1,0,no,/bedding-towels/,13|15|1,QualityBlocked,,how-to-restore-absorbency-to-towels
 15,How to Remove Sour Smell From Towels,Odors,Laundry Odors,Problem Solving,1,0,no,/odors/,2|3|13|14,Pending,,how-to-remove-sour-smell-from-towels
 16,How to Clean Shower Glass Without Streaks,Bathroom,Shower Cleaning,Problem Solving,1,1,yes,/bathroom/,17|18|19,Pending,,how-to-clean-shower-glass-without-streaks
 17,How to Remove Limescale From Faucets,Bathroom,Limescale,Problem Solving,1,1,yes,/bathroom/,16|18|19|20,Pending,,how-to-remove-limescale-from-faucets
