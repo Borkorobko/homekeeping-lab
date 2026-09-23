@@ -1,0 +1,16 @@
+{
+  "article_id": 15,
+  "slug": "how-to-remove-sour-smell-from-towels",
+  "checked_at": "2026-09-23T13:40:02.471813+00:00",
+  "word_count": 740,
+  "summary_characters": 112,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-09-23T13:40:02.516285+00:00",
+    "risk_level": 0,
+    "source_required": false,
+    "passed": true,
+    "reasons": []
+  }
+}
