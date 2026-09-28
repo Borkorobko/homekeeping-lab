@@ -135,7 +135,54 @@ def render_article(row: dict[str, str], article: dict, published: dict[int, dict
             parts.append(f'''<li><a href="{e(href)}" rel="nofollow noopener">{e(source.get('title','Source'))}</a> — {e(source.get('authority', host))}</li>''')
         parts.append("</ul></section>")
 
-    related = [published[rid] for rid in meta.get("related_ids", []) if rid in published][: config["seo"]["max_related_articles"]]
+    max_related = int(config["seo"]["max_related_articles"])
+    current_id = int(row["ID"])
+    explicit_ids = [int(value) for value in row["RelatedIDs"].split("|") if value.strip()]
+    selected_ids: list[int] = []
+
+    # Explicit editorial relationships remain first. Fill any empty slots with
+    # published siblings from the same cluster, then the same category. This
+    # lets older guides gain links to newly published supporting content after
+    # every rebuild without regenerating the article JSON.
+    for related_id in explicit_ids:
+        if related_id in published and related_id != current_id and related_id not in selected_ids:
+            selected_ids.append(related_id)
+            if len(selected_ids) >= max_related:
+                break
+
+    if len(selected_ids) < max_related:
+        same_cluster = sorted(
+            (
+                rid
+                for rid, candidate in published.items()
+                if rid != current_id
+                and rid not in selected_ids
+                and candidate["Cluster"] == row["Cluster"]
+            ),
+            key=int,
+        )
+        for related_id in same_cluster:
+            selected_ids.append(related_id)
+            if len(selected_ids) >= max_related:
+                break
+
+    if len(selected_ids) < max_related:
+        same_category = sorted(
+            (
+                rid
+                for rid, candidate in published.items()
+                if rid != current_id
+                and rid not in selected_ids
+                and candidate["Category"] == row["Category"]
+            ),
+            key=int,
+        )
+        for related_id in same_category:
+            selected_ids.append(related_id)
+            if len(selected_ids) >= max_related:
+                break
+
+    related = [published[related_id] for related_id in selected_ids]
     if related:
         parts.append('<section><h2>Related guides</h2><div class="related-grid">')
         for rel in related:

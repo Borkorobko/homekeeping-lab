@@ -8,7 +8,7 @@ Automated English-language evergreen content site for practical home cleaning, l
 
 The first end-to-end publishing pipeline is now in place:
 
-- 25-article launch content plan
+- expanded 80-article content plan
 - explicit category/cluster metadata and related article IDs
 - stable `/guides/<slug>/` URL model
 - structured OpenAI article generator
@@ -17,9 +17,9 @@ The first end-to-end publishing pipeline is now in place:
 - verified source-packet requirement for safety-sensitive topics
 - static site builder with homepage, category hubs, guide pages, trust pages, sitemap and robots.txt
 - GitHub Actions checks
-- manual one-article generation workflow
+- scheduled one-article generation workflow (Monday/Wednesday/Friday)
 
-Automatic scheduling is intentionally disabled until the first manual pipeline run succeeds. Cloudflare Pages, custom-domain DNS, Search Console feedback and AdSense come later.
+Scheduled publishing is enabled at three guides per week. Search Console data now informs a short-term growth queue that prioritizes proven Laundry and Stain Removal clusters while the normal priority queue remains the fallback.
 
 ## Publishing states
 
@@ -39,6 +39,7 @@ A failed check becomes `QualityBlocked` or `SafetyBlocked` and is not published.
 - `sources/README.md` — verified safety-source packet format
 - `docs/SAFETY.md` — non-negotiable safety rules
 - `docs/ARCHITECTURE.md` — architecture and roadmap
+- `config/site.json` → `growth_focus` — temporary GSC-informed preferred article queue
 
 ## Safety principle
 

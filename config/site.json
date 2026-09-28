@@ -7,15 +7,42 @@
   "planned_weekly_publish_min": 2,
   "planned_weekly_publish_max": 4,
   "categories": [
-    {"name": "Laundry", "slug": "laundry"},
-    {"name": "Stain Removal", "slug": "stain-removal"},
-    {"name": "Fabric Care", "slug": "fabric-care"},
-    {"name": "Bathroom", "slug": "bathroom"},
-    {"name": "Kitchen", "slug": "kitchen"},
-    {"name": "Odors", "slug": "odors"},
-    {"name": "Bedding & Towels", "slug": "bedding-towels"},
-    {"name": "Shoes", "slug": "shoes"},
-    {"name": "Home Cleaning", "slug": "home-cleaning"}
+    {
+      "name": "Laundry",
+      "slug": "laundry"
+    },
+    {
+      "name": "Stain Removal",
+      "slug": "stain-removal"
+    },
+    {
+      "name": "Fabric Care",
+      "slug": "fabric-care"
+    },
+    {
+      "name": "Bathroom",
+      "slug": "bathroom"
+    },
+    {
+      "name": "Kitchen",
+      "slug": "kitchen"
+    },
+    {
+      "name": "Odors",
+      "slug": "odors"
+    },
+    {
+      "name": "Bedding & Towels",
+      "slug": "bedding-towels"
+    },
+    {
+      "name": "Shoes",
+      "slug": "shoes"
+    },
+    {
+      "name": "Home Cleaning",
+      "slug": "home-cleaning"
+    }
   ],
   "publishing": {
     "default_status": "Pending",
@@ -30,5 +57,19 @@
     "generate_robots_txt": true,
     "explicit_related_links": true,
     "max_related_articles": 4
+  },
+  "growth_focus": {
+    "enabled": true,
+    "preferred_ids": [
+      5,
+      27,
+      34,
+      10,
+      35,
+      36,
+      37,
+      40
+    ],
+    "rationale": "GSC-informed short-term queue: strengthen laundry and stain-removal clusters that are already earning impressions."
   }
 }
