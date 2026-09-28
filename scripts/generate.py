@@ -8,6 +8,7 @@ from openai import OpenAI
 
 from common import (
     article_path,
+    load_config,
     load_plan,
     load_source_packet,
     normalize_source_required,
@@ -16,6 +17,7 @@ from common import (
 
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+config = load_config()
 
 
 def clean_json_text(text: str) -> str:
@@ -44,8 +46,26 @@ def eligible(row: dict[str, str]) -> bool:
 
 def choose_topic(rows: list[dict[str, str]]) -> dict[str, str] | None:
     candidates = [row for row in rows if eligible(row)]
+    if not candidates:
+        return None
+
+    focus = config.get("growth_focus", {})
+    if focus.get("enabled"):
+        preferred_ids = [int(value) for value in focus.get("preferred_ids", [])]
+        order = {article_id: index for index, article_id in enumerate(preferred_ids)}
+        preferred = [row for row in candidates if int(row["ID"]) in order]
+        if preferred:
+            preferred.sort(
+                key=lambda row: (
+                    order[int(row["ID"])],
+                    int(row["Priority"]),
+                    int(row["ID"]),
+                )
+            )
+            return preferred[0]
+
     candidates.sort(key=lambda row: (int(row["Priority"]), int(row["ID"])))
-    return candidates[0] if candidates else None
+    return candidates[0]
 
 
 def source_context(row: dict[str, str]) -> str:
