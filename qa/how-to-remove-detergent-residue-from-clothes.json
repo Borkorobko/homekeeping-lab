@@ -1,0 +1,16 @@
+{
+  "article_id": 5,
+  "slug": "how-to-remove-detergent-residue-from-clothes",
+  "checked_at": "2026-09-28T16:46:32.028702+00:00",
+  "word_count": 653,
+  "summary_characters": 97,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-09-28T16:46:32.069252+00:00",
+    "risk_level": 0,
+    "source_required": false,
+    "passed": true,
+    "reasons": []
+  }
+}
