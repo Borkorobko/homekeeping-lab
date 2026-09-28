@@ -16,7 +16,7 @@ Build a mostly automated English-language evergreen site for home cleaning, laun
 8. `scripts/build_site.py` publishes only articles that reached `SafetyPassed`, then builds the static site.
 9. Explicit `RelatedIDs` are the primary internal-link system.
 10. The builder generates homepage, category hubs, guide pages, About, Editorial Policy, Safety Policy, sitemap and robots.txt.
-11. `.github/workflows/generate.yml` runs one complete article cycle manually.
+11. `.github/workflows/generate.yml` runs one complete article cycle manually or on the Monday/Wednesday/Friday schedule.
 12. `.github/workflows/checks.yml` compiles scripts, validates the content plan and tests the static build on pushes/PRs.
 
 ## Publishing states
@@ -72,17 +72,18 @@ Risk 0 can proceed without a source packet when the topic is genuinely routine. 
 
 Football Training Lab primarily inferred related articles from shared title tokens. Homekeeping Lab instead uses explicit `RelatedIDs` as the primary relationship graph. Only related guides that are actually published are rendered as links.
 
-## Launch strategy
+## Growth strategy
 
-The initial plan contains 25 launch articles. We will not publish them in one burst. After the first manual end-to-end test succeeds, the workflow can be scheduled for roughly 2–4 new guides per week.
+The content plan has expanded to 80 evergreen guides. Publishing runs three times per week rather than in one large burst.
 
-## Remaining phases
+Search Console data is now used as a routing signal, not as a reason to rewrite pages after every small sample. A temporary `growth_focus.preferred_ids` queue in `config/site.json` prioritizes adjacent Laundry and Stain Removal topics because those clusters are already earning impressions. When the preferred queue is exhausted or an item is ineligible, generation falls back to the normal Priority + ID order.
 
-- add `OPENAI_API_KEY` as a GitHub Actions repository secret
-- run and inspect the first manual article cycle
-- fix any real-world pipeline issues found by that run
-- enable the publishing schedule
-- connect the deployable `site/` directory to hosting
-- connect `homekeepinglab.com` through DNS
-- add Search Console after indexing/performance data exists
+Internal linking is rebuilt dynamically on every site build: explicit `RelatedIDs` come first, then empty related-guide slots are filled with published guides from the same cluster and then the same category. This lets older pages acquire links to newly published supporting guides without regenerating article content.
+
+## Current operating phase
+
+- keep scheduled publishing and safety/quality gates active
+- use Search Console to identify clusters worth expanding
+- improve internal linking as new supporting guides publish
+- monitor indexation and ranking trends without repeatedly requesting indexing
 - add AdSense only after the site has enough useful content and traffic
