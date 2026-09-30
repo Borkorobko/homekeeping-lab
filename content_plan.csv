@@ -25,7 +25,7 @@ ID,Title,Category,Cluster,Intent,Priority,RiskLevel,SourceRequired,ParentHub,Rel
 24,How to Clean White Sneakers,Shoes,Sneaker Care,Problem Solving,1,0,no,/shoes/,25|10|12,Pending,,how-to-clean-white-sneakers
 25,How to Get Rid of Shoe Odor,Odors,Shoe Odors,Problem Solving,2,0,no,/odors/,24|15|22,Pending,,how-to-get-rid-of-shoe-odor
 26,How Often Should You Wash Clothes?,Laundry,Laundry Basics,Informational,2,0,no,/laundry/,4|29|33|34,Pending,,how-often-should-you-wash-clothes
-27,Why Do Clothes Feel Stiff After Washing?,Laundry,Laundry Problems,Problem Solving,2,0,no,/laundry/,1|5|13|14,Pending,,why-do-clothes-feel-stiff-after-washing
+27,Why Do Clothes Feel Stiff After Washing?,Laundry,Laundry Problems,Problem Solving,2,0,no,/laundry/,1|5|13|14,QualityBlocked,,why-do-clothes-feel-stiff-after-washing
 28,How to Prevent Clothes From Fading in the Wash,Laundry,Laundry Color Care,Problem Solving,2,0,no,/laundry/,4|29|33|47,Pending,,how-to-prevent-clothes-from-fading-in-the-wash
 29,How to Wash Dark Clothes Without Fading Them,Laundry,Laundry Color Care,Problem Solving,2,0,no,/laundry/,4|12|28|47,Pending,,how-to-wash-dark-clothes-without-fading-them
 30,How to Wash Delicate Clothes Without Damaging Them,Laundry,Laundry Basics,Problem Solving,3,0,no,/laundry/,4|12|45|46,Pending,,how-to-wash-delicate-clothes-without-damaging-them

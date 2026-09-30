@@ -1,0 +1,98 @@
+{
+  "title": "Why Do Clothes Feel Stiff After Washing?",
+  "summary": "Clothes feel stiff after washing due to detergent residue, hard water minerals, or improper drying methods.",
+  "quick_answer": "Clothes often feel stiff after washing because detergent residue remains on the fabric, especially if too much detergent is used or the rinse cycle is insufficient. Hard water can also cause stiffness by leaving mineral deposits on fibers. Additionally, drying clothes in direct sunlight or over-drying them in a machine can make fabrics feel less soft. To prevent stiffness, use the recommended detergent amount, ensure thorough rinsing, consider water softeners if you have hard water, and avoid over-drying. For certain fabrics, using fabric softener or dryer sheets following product instructions can also help maintain softness.",
+  "items_needed": [
+    "Laundry detergent",
+    "Water (preferably soft or treated)",
+    "Fabric softener (optional)",
+    "Washing machine with rinse cycle",
+    "Dryer or clothesline"
+  ],
+  "steps": [
+    {
+      "title": "Use the right amount of detergent",
+      "body": "Measure detergent according to the product label and your load size, avoiding excess that can leave residue stiffening clothes."
+    },
+    {
+      "title": "Ensure thorough rinsing",
+      "body": "Use your machine’s extra rinse option or run an additional rinse cycle to remove detergent buildup and minerals from hard water."
+    },
+    {
+      "title": "Consider water quality",
+      "body": "If you have hard water, try using water softeners or detergents designed for hard water to prevent mineral deposits on fabrics."
+    },
+    {
+      "title": "Dry clothes properly",
+      "body": "Dry clothes at moderate heat or line dry in shade to avoid over-drying or sun damage that can stiffen fabrics; avoid tumble drying delicate items excessively."
+    }
+  ],
+  "mistakes": [
+    "Using too much detergent leads to residue buildup; avoid overusing detergent.",
+    "Skipping rinse cycles may leave detergent or minerals on clothes causing stiffness; always rinse thoroughly.",
+    "Drying clothes in strong direct sunlight for extended periods can dry out fibers and cause stiffness."
+  ],
+  "safety_notes": [
+    "Follow detergent and fabric softener label instructions carefully to avoid fabric damage.",
+    "Do not mix bleach with ammonia, vinegar, or other cleaners unless explicitly allowed by product labels.",
+    "Refer to your washing machine manual for proper dosing and cycle settings."
+  ],
+  "sections": [
+    {
+      "heading": "Why Detergent Residue Causes Stiffness",
+      "body": "Excess detergent or insufficient rinsing can leave soap residue trapped inside fabric fibers. This residue creates a film that makes fibers less flexible and rough to the touch. This is more common with powder detergents than liquid ones, though both can cause buildup if not used properly.",
+      "bullets": [
+        "Always follow detergent label dosing instructions.",
+        "Use extra rinse cycles if your machine or water quality demands it."
+      ]
+    },
+    {
+      "heading": "The Impact of Hard Water on Fabric",
+      "body": "Hard water contains minerals such as calcium and magnesium. These minerals interact with detergent and fabric fibers, leaving deposits that cause stiffness. Water softeners or specially formulated detergents can bind these minerals to prevent residue buildup.",
+      "bullets": [
+        "Consider testing your water hardness if stiffness persists despite correct detergent use.",
+        "Use water softeners or detergents labeled for hard water."
+      ]
+    },
+    {
+      "heading": "Proper Drying Techniques to Maintain Fabric Softness",
+      "body": "Drying clothes excessively or in harsh sunlight can cause fabric fibers to become brittle and stiff. Heat can break down fibers and degrade softness. Using a dryer on the appropriate heat setting or air drying clothes in the shade helps preserve softness.",
+      "bullets": [
+        "Avoid over-drying in tumble dryers.",
+        "Air dry delicate fabrics indoors or in shaded outdoor areas."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can fabric softeners prevent clothes from becoming stiff?",
+      "answer": "Yes, when used according to product instructions, fabric softeners can help reduce stiffness by coating fibers with lubricants."
+    },
+    {
+      "question": "Is it better to use powder or liquid detergent to avoid stiffness?",
+      "answer": "Both can cause stiffness if overdosed or not rinsed properly; liquid detergents often dissolve better in cold water."
+    },
+    {
+      "question": "Why do towels sometimes feel stiff after washing?",
+      "answer": "Towels can trap detergent residue or minerals from hard water; thorough rinsing and avoiding over-drying can help maintain their softness."
+    }
+  ],
+  "meta": {
+    "id": 27,
+    "slug": "why-do-clothes-feel-stiff-after-washing",
+    "category": "Laundry",
+    "cluster": "Laundry Problems",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/laundry/",
+    "related_ids": [
+      1,
+      5,
+      13,
+      14
+    ],
+    "generated_at": "2026-09-30T14:56:39.555419+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
