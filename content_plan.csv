@@ -32,7 +32,7 @@ ID,Title,Category,Cluster,Intent,Priority,RiskLevel,SourceRequired,ParentHub,Rel
 31,Why Clothes Come Out of the Washer Soaking Wet,Laundry,Washing Machine Care,Problem Solving,3,1,yes,/laundry/,3|5|32|34,Pending,,why-clothes-come-out-of-the-washer-soaking-wet
 32,How to Reduce Wrinkles in Laundry,Laundry,Laundry Problems,Problem Solving,3,0,no,/laundry/,4|30|33|67,Pending,,how-to-reduce-wrinkles-in-laundry
 33,Should You Wash New Clothes Before Wearing Them?,Laundry,Laundry Basics,Informational,3,0,no,/laundry/,4|12|26|28,Pending,,should-you-wash-new-clothes-before-wearing-them
-34,How to Air-Dry Clothes Indoors Without a Musty Smell,Laundry,Laundry Odors,Problem Solving,2,0,no,/laundry/,2|15|26|67,Pending,,how-to-air-dry-clothes-indoors-without-a-musty-smell
+34,How to Air-Dry Clothes Indoors Without a Musty Smell,Laundry,Laundry Odors,Problem Solving,2,0,no,/laundry/,2|15|26|67,Published,2026-10-02,how-to-air-dry-clothes-indoors-without-a-musty-smell
 35,How to Remove Grass Stains From Clothes,Stain Removal,Outdoor Stains,Problem Solving,2,0,no,/stain-removal/,6|7|39|40,Pending,,how-to-remove-grass-stains-from-clothes
 36,How to Remove Red Wine Stains From Clothes,Stain Removal,Food & Drink Stains,Problem Solving,2,0,no,/stain-removal/,7|37|41|43,Pending,,how-to-remove-red-wine-stains-from-clothes
 37,How to Remove Tomato Sauce Stains From Clothes,Stain Removal,Food & Drink Stains,Problem Solving,2,0,no,/stain-removal/,6|7|36|41,Pending,,how-to-remove-tomato-sauce-stains-from-clothes
