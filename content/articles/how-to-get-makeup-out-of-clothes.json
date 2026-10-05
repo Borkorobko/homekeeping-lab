@@ -1,0 +1,100 @@
+{
+  "title": "How to Get Makeup Out of Clothes",
+  "summary": "Effective, safe steps to remove makeup stains from clothing without damaging fabric.",
+  "quick_answer": "To remove makeup stains from clothes, first gently scrape off excess makeup without rubbing. Blot the stain with a clean cloth dampened with cold water to loosen residue. Apply a stain remover or liquid detergent according to the product label, testing on an inconspicuous area first. Let it sit as directed, then wash the garment following care instructions. Air dry and repeat if necessary to avoid setting the stain with heat.",
+  "items_needed": [
+    "clean cloths or paper towels",
+    "cold water",
+    "mild liquid detergent or stain remover",
+    "soft brush (optional)",
+    "washing machine (or basin for hand washing)"
+  ],
+  "steps": [
+    {
+      "title": "Gently Scrape Off Excess Makeup",
+      "body": "Use a dull edge like a spoon or the back of a butter knife to carefully lift away any dried or caked makeup. Avoid rubbing as it can push the stain deeper into fibers."
+    },
+    {
+      "title": "Blot the Stain with Cold Water",
+      "body": "Dampen a clean cloth with cold water and gently blot from the outside of the stain inward to prevent spreading. Repeat blotting to remove as much makeup as possible without rubbing."
+    },
+    {
+      "title": "Apply Liquid Detergent or Stain Remover",
+      "body": "Select a mild liquid detergent or a stain remover suitable for your fabric. Test it first on a hidden area to check for colorfastness. Apply the product directly to the stain as instructed on the label and let it sit for the recommended time."
+    },
+    {
+      "title": "Wash According to Garment Care Labels",
+      "body": "Wash the garment in the warmest water allowed by its care label, usually using your regular laundry detergent. Avoid heat drying as it can set the stain."
+    },
+    {
+      "title": "Air Dry and Check for Remaining Stains",
+      "body": "Air dry the garment completely. If the stain persists, repeat the treatment instead of using dryer heat to prevent permanent setting."
+    }
+  ],
+  "mistakes": [
+    "Rubbing the stain aggressively can embed makeup deeper into fibers, making removal harder.",
+    "Using hot water or a dryer before the stain is gone risks setting the makeup permanently.",
+    "Applying bleach or harsh chemicals without checking fabric compatibility can cause discoloration or damage.",
+    "Mixing cleaning products without clear manufacturer recommendations can produce harmful fumes or reduce effectiveness."
+  ],
+  "safety_notes": [
+    "Always follow product label instructions and test stain removers on an inconspicuous area first.",
+    "Avoid mixing different cleaning agents unless explicitly directed by manufacturers to prevent dangerous reactions.",
+    "Use cold water initially to avoid setting protein-based makeup ingredients.",
+    "Keep cleaning products out of reach of children and pets."
+  ],
+  "sections": [
+    {
+      "heading": "Why Makeup Stains Are Challenging",
+      "body": "Makeup products often contain oils, pigments, and dyes that bind tightly to fabric fibers, making stains difficult to remove. Oil-based foundations, lipsticks, and mascara can penetrate deep into textiles, while pigment dyes color the fabric threads. Water alone usually cannot remove such stains effectively. Using a detergent or stain remover designed to break down oil and pigment helps lift makeup from clothes. Additionally, applying cold water and avoiding heat prevents stains from setting permanently, maintaining fabric integrity.",
+      "bullets": [
+        "Makeup contains oils, pigments, and dyes that cling to fabrics",
+        "Cold water prevents stain setting and prepares the fabric for treatment",
+        "Detergents or stain removers help break down oily components",
+        "Avoiding heat is crucial until the stain is fully removed"
+      ]
+    },
+    {
+      "heading": "Material-Specific Considerations",
+      "body": "Fabric type affects stain removal options. Delicate materials such as silk, wool, or rayon require extra caution; use mild detergents and spot test carefully. For delicate fabrics, hand washing gently is preferable to machine washing. Synthetic fabrics like polyester or nylon can usually tolerate standard stain removers but still require testing. Cotton and other sturdy fabrics typically respond well to the steps outlined but confirm care labels to avoid shrinkage or color loss.",
+      "bullets": [
+        "Test stain remover on a hidden area for delicates",
+        "Use mild detergent for sensitive fabrics",
+        "Hand wash delicate items to avoid damage",
+        "Follow garment label recommendations strictly"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use makeup remover to treat makeup stains on clothes?",
+      "answer": "Makeup remover may help dissolve makeup stains but can also contain oils or ingredients that leave residue or affect certain fabrics. It's better to use mild detergent or a stain remover designed for textiles."
+    },
+    {
+      "question": "What if the stain is old or dried?",
+      "answer": "For dried makeup stains, gently scrape off residue first, then apply stain remover or detergent. You may need to repeat treatment and soak longer based on product instructions."
+    },
+    {
+      "question": "Is it okay to put stained clothes in the dryer before stain removal?",
+      "answer": "No, heat from dryers can set makeup stains permanently. Always treat and remove stains before machine drying or air dry until stains are fully gone."
+    }
+  ],
+  "meta": {
+    "id": 10,
+    "slug": "how-to-get-makeup-out-of-clothes",
+    "category": "Stain Removal",
+    "cluster": "Body Care Stains",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      6,
+      9,
+      11,
+      12
+    ],
+    "generated_at": "2026-10-05T17:09:51.644075+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}

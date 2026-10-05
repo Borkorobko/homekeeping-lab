@@ -1,0 +1,16 @@
+{
+  "article_id": 10,
+  "slug": "how-to-get-makeup-out-of-clothes",
+  "checked_at": "2026-10-05T17:09:51.765580+00:00",
+  "word_count": 748,
+  "summary_characters": 84,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-10-05T17:09:51.803854+00:00",
+    "risk_level": 0,
+    "source_required": false,
+    "passed": true,
+    "reasons": []
+  }
+}
