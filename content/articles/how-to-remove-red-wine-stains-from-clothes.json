@@ -1,0 +1,98 @@
+{
+  "title": "How to Remove Red Wine Stains From Clothes",
+  "summary": "Effective steps to safely remove red wine stains from clothes using common household items and proper washing methods.",
+  "quick_answer": "To remove red wine stains from clothes, promptly blot the stain with a clean cloth to absorb excess wine. Avoid rubbing to prevent spreading. Next, apply a stain remover or soak the garment in cold water, following the product label recommendations. For tougher stains, gently treat with a liquid laundry detergent directly on the stain before washing. Always check fabric care labels first and test any treatment on an inconspicuous area. Finally, wash the item as directed, using the warmest water safe for the fabric. Avoid drying the garment until the stain is fully removed since heat can set the stain permanently.",
+  "items_needed": [
+    "clean white cloth or paper towels",
+    "cold water",
+    "liquid laundry detergent or stain remover",
+    "washing machine or basin for soaking"
+  ],
+  "steps": [
+    {
+      "title": "Blot Excess Wine Immediately",
+      "body": "Use a clean white cloth or paper towel to gently blot the red wine stain to absorb as much liquid as possible. Do not rub, as this can push the stain deeper into the fabric fibers or spread it further."
+    },
+    {
+      "title": "Rinse the Stain with Cold Water",
+      "body": "Hold the stained area under cold running water to flush out the wine from the fabric. For delicate items, soak the stain in a basin with cold water according to the garment’s care instructions."
+    },
+    {
+      "title": "Apply Detergent or Stain Remover",
+      "body": "Apply a small amount of liquid laundry detergent or a stain remover product directly onto the stain. Work it gently into the fabric with your fingers or a soft brush if appropriate, following the stain remover's label directions."
+    },
+    {
+      "title": "Launder According to Fabric Care Label",
+      "body": "Wash the garment using the warmest water temperature safe for the fabric as indicated on the care label. Use your regular laundry detergent and add stain remover per product instructions if desired. Avoid using hot water or drying the garment before the stain is fully removed."
+    }
+  ],
+  "mistakes": [
+    "Rubbing the stain can spread it and push it deeper into fibers, making removal harder.",
+    "Using hot water or putting the garment in the dryer before the stain is gone can set the stain permanently.",
+    "Applying bleach or mixing bleach with other cleaners without manufacturer guidance can damage fabric or create hazardous fumes."
+  ],
+  "safety_notes": [
+    "Always test stain removers or detergents on an inconspicuous area first to check fabric compatibility.",
+    "Follow all product label instructions for safe use and disposal of cleaning agents.",
+    "Avoid mixing unknown cleaners or combining bleach with acids, ammonia, or other substances."
+  ],
+  "sections": [
+    {
+      "heading": "Why Acting Quickly Is Important",
+      "body": "Red wine contains pigments and tannins that can bind strongly to fabric fibers if allowed to dry. Promptly blotting and rinsing the stain prevents these compounds from setting. The sooner you treat a wine stain, the higher the chance of complete removal. Delays can cause the stain to become permanent or require harsher treatments that may damage the fabric.",
+      "bullets": [
+        "Blot to remove liquid but avoid rubbing to limit stain spread.",
+        "Cold water helps dilute and flush out wine pigments without setting them."
+      ]
+    },
+    {
+      "heading": "Material-Specific Considerations",
+      "body": "Different fabrics respond uniquely to stain treatments. Natural fibers like cotton or linen can usually tolerate more vigorous treatment and warm water, while delicate fabrics like silk, wool, or rayon require gentle handling and cold water. Always check the garment’s care label and when uncertain, test in an inconspicuous area first. For dry-clean-only garments, professional cleaning is recommended.",
+      "bullets": [
+        "Use cold water for delicate fibers to avoid shrinkage or distortion.",
+        "Avoid scrubbing delicate fabrics to prevent surface damage."
+      ]
+    },
+    {
+      "heading": "What Not to Do With Red Wine Stains",
+      "body": "Avoid using hot water initially, as heat can cause the wine stain to set permanently. Avoid rubbing or scrubbing vigorously, which may damage fibers or spread the stain. Do not apply bleach directly unless the product and fabric care label explicitly permit it. Avoid mixing different stain removal products or household chemicals, as this can cause harmful reactions or fabric damage.",
+      "bullets": [
+        "Never use hot water on fresh wine stains.",
+        "Do not mix bleach with ammonia, vinegar, or other cleaners.",
+        "Avoid drying stained garments until the stain is fully removed."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use white wine to remove red wine stains?",
+      "answer": "No, white wine is not effective for removing red wine stains and can actually worsen the stain."
+    },
+    {
+      "question": "Is it safe to use vinegar or club soda on red wine stains?",
+      "answer": "Club soda may help dilute fresh stains, but vinegar is acidic and should be used cautiously; test on a hidden area first and follow fabric care advice."
+    },
+    {
+      "question": "What if the stain persists after washing?",
+      "answer": "Repeat the stain treatment steps or consider professional cleaning, especially for delicate or dry-clean-only fabrics."
+    }
+  ],
+  "meta": {
+    "id": 36,
+    "slug": "how-to-remove-red-wine-stains-from-clothes",
+    "category": "Stain Removal",
+    "cluster": "Food & Drink Stains",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      7,
+      37,
+      41,
+      43
+    ],
+    "generated_at": "2026-10-09T15:19:33.549790+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
