@@ -1,0 +1,107 @@
+{
+  "title": "How to Remove Tomato Sauce Stains From Clothes",
+  "summary": "Effectively remove tomato sauce stains by promptly treating with cold water and appropriate detergent following product labels.",
+  "quick_answer": "To remove tomato sauce stains from clothes, first scrape off excess sauce gently without spreading. Rinse the stained area with cold water from the back to push out the stain, not deeper into fibers. Then apply a suitable laundry detergent directly onto the stain, following the product's directions. Let it sit briefly before washing the garment in the warmest water safe for the fabric, as indicated on the care label. Avoid using bleach unless the garment’s instructions explicitly allow it. Repeat if necessary before drying, as drying can set the stain permanently.",
+  "items_needed": [
+    "cold water",
+    "laundry detergent (check label)",
+    "soft spoon or dull knife",
+    "stain remover (optional, follow label)",
+    "washing machine or basin"
+  ],
+  "steps": [
+    {
+      "title": "Remove excess sauce",
+      "body": "Use a dull knife or a spoon to gently scrape off extra tomato sauce from the fabric without rubbing it deeper into the fibers."
+    },
+    {
+      "title": "Rinse stain with cold water",
+      "body": "Hold the stained area under cold running water, directing the flow from the back of the fabric to the front to flush out the stain rather than pushing it into the fibers."
+    },
+    {
+      "title": "Apply detergent or stain remover",
+      "body": "Apply a small amount of laundry detergent directly on the stained area. For tough stains, a stain remover can be applied, but always follow the product label instructions and test on an inconspicuous area first."
+    },
+    {
+      "title": "Wash according to fabric care label",
+      "body": "Wash the garment using the warmest water temperature safe for the fabric, as indicated on the care label. Check detergent and washing machine instructions for dosing and settings."
+    },
+    {
+      "title": "Check stain before drying",
+      "body": "After washing, inspect the garment. If the stain persists, repeat treatment before drying. Do not dry until the stain is fully removed, as heat sets stains permanently."
+    }
+  ],
+  "mistakes": [
+    "Using hot water initially can set the tomato sauce stain, making it harder to remove.",
+    "Rubbing the stain aggressively can embed the sauce deeper into fibers.",
+    "Drying stained clothes before the stain is completely gone causes permanent staining.",
+    "Mixing bleach with other cleaners or using bleach on non-bleach-safe fabrics can damage clothing."
+  ],
+  "safety_notes": [
+    "Always follow product labels when using detergents and stain removers.",
+    "Test stain removers on a small, hidden area of fabric before full application to check for colorfastness.",
+    "Avoid mixing bleach with vinegar, ammonia, or other cleaners unless explicitly allowed by the manufacturer.",
+    "Check fabric care labels for water temperature and chemical compatibility to prevent damage."
+  ],
+  "sections": [
+    {
+      "heading": "Why use cold water first?",
+      "body": "Cold water helps prevent the tomato sauce stain from setting into fabric fibers. Hot water can coagulate the proteins and intensify the stain, making removal more difficult. Rinsing from the back of the stain pushes the particles out instead of deeper inside.",
+      "bullets": [
+        "Cold water preserves fabric and color.",
+        "Direct water flow from fabric reverse pushes out stain particles.",
+        "Avoids premature stain setting caused by heat."
+      ]
+    },
+    {
+      "heading": "Choosing stain removers and detergents",
+      "body": "Different detergents and stain removers vary in formulation. Select one appropriate for your fabric type and stain severity. Always check the product label for instructions, usage limits, and compatibility with your fabric. If unsure, perform a spot test in an inconspicuous area.",
+      "bullets": [
+        "Check active ingredients and fabric safety notes.",
+        "Use stain remover as a supplementary step for stubborn stains.",
+        "Avoid overapplication which may cause residue or color change."
+      ]
+    },
+    {
+      "heading": "Fabric-specific considerations",
+      "body": "Delicate fabrics like silk or wool require special care. For these, use detergents designed for delicate fabrics and avoid harsh stain removal chemicals. Follow garment care instructions carefully. For non-washable items, consider professional cleaning.",
+      "bullets": [
+        "Use gentle detergents for sensitive fabrics.",
+        "Do not soak or rub delicate fabrics excessively.",
+        "Professional cleaning may be preferred for expensive or non-washable clothes."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use bleach to remove tomato sauce stains?",
+      "answer": "Only use bleach if the fabric care label permits it and follow product instructions; otherwise, bleach can damage or discolor clothes."
+    },
+    {
+      "question": "What should I do if the stain is old?",
+      "answer": "For older stains, soak the stained area in cold water with detergent, then treat as usual, but persistent stains may need repeated applications or professional cleaning."
+    },
+    {
+      "question": "Is it okay to rub the stain hard to remove it?",
+      "answer": "No, rubbing can spread the stain and push it deeper into fibers; gently blot or scrape excess sauce instead."
+    }
+  ],
+  "meta": {
+    "id": 37,
+    "slug": "how-to-remove-tomato-sauce-stains-from-clothes",
+    "category": "Stain Removal",
+    "cluster": "Food & Drink Stains",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      6,
+      7,
+      36,
+      41
+    ],
+    "generated_at": "2026-10-12T17:57:26.222861+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}
