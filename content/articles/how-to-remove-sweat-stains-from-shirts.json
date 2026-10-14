@@ -1,0 +1,100 @@
+{
+  "title": "How to Remove Sweat Stains From Shirts",
+  "summary": "Effectively remove sweat stains from shirts using safe, practical methods suitable for various fabrics.",
+  "quick_answer": "To remove sweat stains from shirts, first identify the fabric type and check its care label. Pre-treat the stained areas with a stain remover or a mixture of laundry detergent and water, applying it gently. Let it sit according to the product label directions before washing the shirt in the warmest water safe for the fabric. Avoid using bleach unless the care label explicitly permits it and never mix bleach with ammonia or vinegar. For stubborn stains, repeating pre-treatment or soaking the shirt with a mild detergent may help. Always air dry shirts to prevent setting stains with heat.",
+  "items_needed": [
+    "laundry detergent suitable for fabric",
+    "stain remover or mild soap",
+    "clean soft brush or cloth",
+    "water",
+    "washing machine or basin",
+    "optional: white vinegar (for odor removal, test first)"
+  ],
+  "steps": [
+    {
+      "title": "Check the care label",
+      "body": "Start by reading the shirt’s care label to understand fabric type and washing instructions, which informs stain treatment and water temperature."
+    },
+    {
+      "title": "Pre-treat the sweat stain",
+      "body": "Apply a stain remover or a small amount of laundry detergent diluted with water directly onto the sweat stain. Gently rub with a soft brush or cloth to help the solution penetrate the fabric without damaging it."
+    },
+    {
+      "title": "Let the treatment sit",
+      "body": "Allow the pre-treatment to sit on the stain for the time specified on the product label or approximately 15-30 minutes, depending on stain severity and fabric tolerance."
+    },
+    {
+      "title": "Wash the shirt",
+      "body": "Wash the shirt in the warmest water safe for the fabric, following garment label instructions and detergent directions. Avoid mixing bleach with stain removers or other household chemicals."
+    },
+    {
+      "title": "Check and air dry",
+      "body": "After washing, inspect the shirt to see if the stain has been removed. Do not machine dry until stains are fully gone as heat can set them permanently. Air dry instead."
+    }
+  ],
+  "mistakes": [
+    "Using bleach on fabrics labeled 'Do Not Bleach' can cause discoloration or damage.",
+    "Mixing bleach with ammonia, vinegar, or other cleaners can produce hazardous fumes.",
+    "Drying the shirt with heat before confirming the stain is gone can permanently set it.",
+    "Scrubbing too hard may damage delicate fabric fibers."
+  ],
+  "safety_notes": [
+    "Never mix bleach with ammonia, vinegar, or other household cleaners.",
+    "Always test stain removers on a hidden area to check for colorfastness.",
+    "Follow all product labels and fabric care instructions closely.",
+    "Wear gloves if you have sensitive skin and are using commercial stain removers."
+  ],
+  "sections": [
+    {
+      "heading": "Why sweat stains form and how treatment works",
+      "body": "Sweat stains are caused mainly by proteins and salts from perspiration reacting with deodorants and fabric fibers. These can cause yellowish discoloration and odor. Pre-treating with detergents that break down proteins and salts allows better stain lift during washing. Avoiding heat before stain removal prevents setting stains permanently.",
+      "bullets": [
+        "Protein-based stains respond well to enzymatic detergents.",
+        "Salt residues dissolve with water and mild agitation.",
+        "Deodorant residues may require repeated treatment.",
+        "Air drying avoids heat-induced permanent staining."
+      ]
+    },
+    {
+      "heading": "Fabric considerations",
+      "body": "Different fabrics react differently to stain treatments. Cotton and polyester blends are generally durable and tolerate moderate warm water washing. Delicate fabrics like silk, wool, or rayon may require gentle methods and specific cleaners. Always consult garment labels or manufacturer guidance to avoid damaging shirts.",
+      "bullets": [
+        "Cotton tolerates standard stain pre-treatment and warm washing.",
+        "Synthetic fabrics may need cooler water and mild detergents.",
+        "Delicates may require hand washing and specialized stain removers."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use bleach to remove sweat stains?",
+      "answer": "Only if the garment care label explicitly allows bleach use; otherwise, it may damage fabric or cause discoloration."
+    },
+    {
+      "question": "Why shouldn’t I dry my shirt before the stain is gone?",
+      "answer": "Heat from drying can set sweat stains permanently, making them much harder or impossible to remove."
+    },
+    {
+      "question": "Can vinegar remove sweat odor from shirts?",
+      "answer": "A diluted vinegar soak may help reduce odor but test first on a hidden area to ensure fabric tolerance and colorfastness."
+    }
+  ],
+  "meta": {
+    "id": 40,
+    "slug": "how-to-remove-sweat-stains-from-shirts",
+    "category": "Stain Removal",
+    "cluster": "Body Care Stains",
+    "intent": "Problem Solving",
+    "risk_level": 0,
+    "source_required": false,
+    "parent_hub": "/stain-removal/",
+    "related_ids": [
+      9,
+      35,
+      38,
+      49
+    ],
+    "generated_at": "2026-10-14T13:44:56.884960+00:00",
+    "model": "gpt-4.1-mini"
+  }
+}

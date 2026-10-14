@@ -38,7 +38,7 @@ ID,Title,Category,Cluster,Intent,Priority,RiskLevel,SourceRequired,ParentHub,Rel
 37,How to Remove Tomato Sauce Stains From Clothes,Stain Removal,Food & Drink Stains,Problem Solving,2,0,no,/stain-removal/,6|7|36|41,Published,2026-10-12,how-to-remove-tomato-sauce-stains-from-clothes
 38,How to Remove Ink Stains From Clothes,Stain Removal,Ink & Dye Stains,Problem Solving,3,1,yes,/stain-removal/,7|9|10|40,Pending,,how-to-remove-ink-stains-from-clothes
 39,How to Remove Mud Stains From Clothes,Stain Removal,Outdoor Stains,Problem Solving,3,0,no,/stain-removal/,35|40|6|11,Pending,,how-to-remove-mud-stains-from-clothes
-40,How to Remove Sweat Stains From Shirts,Stain Removal,Body Care Stains,Problem Solving,2,0,no,/stain-removal/,9|35|38|49,Pending,,how-to-remove-sweat-stains-from-shirts
+40,How to Remove Sweat Stains From Shirts,Stain Removal,Body Care Stains,Problem Solving,2,0,no,/stain-removal/,9|35|38|49,QualityBlocked,,how-to-remove-sweat-stains-from-shirts
 41,How to Remove Chocolate Stains From Clothes,Stain Removal,Food & Drink Stains,Problem Solving,3,0,no,/stain-removal/,6|7|36|37,Pending,,how-to-remove-chocolate-stains-from-clothes
 42,How to Remove Candle Wax From Fabric,Stain Removal,Wax & Residue,Problem Solving,3,1,yes,/stain-removal/,10|12|38|43,Pending,,how-to-remove-candle-wax-from-fabric
 43,How to Remove Chewing Gum From Clothes,Stain Removal,Sticky Residue,Problem Solving,3,0,no,/stain-removal/,6|36|41|42,Pending,,how-to-remove-chewing-gum-from-clothes
