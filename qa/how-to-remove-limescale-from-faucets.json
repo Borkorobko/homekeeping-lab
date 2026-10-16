@@ -1,0 +1,16 @@
+{
+  "article_id": 17,
+  "slug": "how-to-remove-limescale-from-faucets",
+  "checked_at": "2026-10-16T13:16:43.965702+00:00",
+  "word_count": 726,
+  "summary_characters": 116,
+  "passed": true,
+  "reasons": [],
+  "safety": {
+    "checked_at": "2026-10-16T13:16:44.007254+00:00",
+    "risk_level": 1,
+    "source_required": true,
+    "passed": true,
+    "reasons": []
+  }
+}
